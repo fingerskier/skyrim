@@ -1,35 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { StateMachine, State } from 'ygdrassil'
+import Landing from './pages/Landing.jsx'
+import Alchemy from './pages/Alchemy.jsx'
+import Smithing from './pages/Smithing.jsx'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <StateMachine name="skyrim" initial="landing" className="app">
+      <State name="landing">
+        <Landing />
+      </State>
+      <State name="alchemy">
+        <Alchemy />
+      </State>
+      <State name="smithing">
+        <Smithing />
+      </State>
+    </StateMachine>
   )
 }
 
-export default App
