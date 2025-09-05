@@ -1,6 +1,8 @@
+/* eslint-env node */
 // csv-to-json.mjs
 import fs from 'fs';
 import { createRequire } from 'module';
+import process from "node:process";
 const require = createRequire(import.meta.url);
 const csv = require('csv-parser');
 

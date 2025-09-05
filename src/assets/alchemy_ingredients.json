@@ -1,0 +1,557 @@
+[
+  {
+    "﻿Ingredient": "Abecean Longfin",
+    "id": "1",
+    "weight": "0.5"
+  },
+  {
+    "﻿Ingredient": "Ancestor Moth Wing*",
+    "id": "2",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Ash Creep Cluster",
+    "id": "3",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Ash Hopper Jelly",
+    "id": "4",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Ashen Grass Pod",
+    "id": "5",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Bear Claws",
+    "id": "6",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Bee",
+    "id": "7",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Beehive Husk",
+    "id": "8",
+    "weight": "1"
+  },
+  {
+    "﻿Ingredient": "Berit's Ashes(identical to Bone Meal)",
+    "id": "9",
+    "weight": "0.5"
+  },
+  {
+    "﻿Ingredient": "Bleeding Crown",
+    "id": "10",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Blisterwort",
+    "id": "11",
+    "weight": "0.2"
+  },
+  {
+    "﻿Ingredient": "Blue Butterfly Wing",
+    "id": "12",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Blue Dartwing",
+    "id": "13",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Blue Mountain Flower",
+    "id": "14",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Boar Tusk",
+    "id": "15",
+    "weight": "0.5"
+  },
+  {
+    "﻿Ingredient": "Bone Meal",
+    "id": "16",
+    "weight": "0.5"
+  },
+  {
+    "﻿Ingredient": "Briar Heart",
+    "id": "17",
+    "weight": "0.5"
+  },
+  {
+    "﻿Ingredient": "Burnt Spriggan Wood",
+    "id": "18",
+    "weight": "0.5"
+  },
+  {
+    "﻿Ingredient": "Butterfly Wing",
+    "id": "19",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Canis Root",
+    "id": "20",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Charred Skeever Hide",
+    "id": "21",
+    "weight": "0.5"
+  },
+  {
+    "﻿Ingredient": "Chaurus Eggs",
+    "id": "22",
+    "weight": "0.2"
+  },
+  {
+    "﻿Ingredient": "Chaurus Hunter Antennae*",
+    "id": "23",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Chicken's Egg",
+    "id": "24",
+    "weight": "0.5"
+  },
+  {
+    "﻿Ingredient": "Creep Cluster",
+    "id": "25",
+    "weight": "0.2"
+  },
+  {
+    "﻿Ingredient": "Crimson Nirnroot",
+    "id": "26",
+    "weight": "0.2"
+  },
+  {
+    "﻿Ingredient": "Cyrodilic Spadetail",
+    "id": "27",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Daedra Heart",
+    "id": "28",
+    "weight": "0.5"
+  },
+  {
+    "﻿Ingredient": "Deathbell",
+    "id": "29",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Dragon's Tongue",
+    "id": "30",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Dwarven Oil",
+    "id": "31",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Ectoplasm",
+    "id": "32",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Elves Ear",
+    "id": "33",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Emperor Parasol Moss",
+    "id": "34",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Eye of Sabre Cat",
+    "id": "35",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Falmer Ear",
+    "id": "36",
+    "weight": "0.2"
+  },
+  {
+    "﻿Ingredient": "Felsaad Tern Feathers",
+    "id": "37",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Fire Salts",
+    "id": "38",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Fly Amanita",
+    "id": "39",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Frost Mirriam",
+    "id": "40",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Frost Salts",
+    "id": "41",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Garlic",
+    "id": "42",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Giant Lichen",
+    "id": "43",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Giant's Toe",
+    "id": "44",
+    "weight": "1"
+  },
+  {
+    "﻿Ingredient": "Gleamblossom*",
+    "id": "45",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Glow Dust",
+    "id": "46",
+    "weight": "0.5"
+  },
+  {
+    "﻿Ingredient": "Glowing Mushroom",
+    "id": "47",
+    "weight": "0.2"
+  },
+  {
+    "﻿Ingredient": "Grass Pod",
+    "id": "48",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Hagraven Claw",
+    "id": "49",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Hagraven Feathers",
+    "id": "50",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Hanging Moss",
+    "id": "51",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Hawk Beak",
+    "id": "52",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Hawk Feathers",
+    "id": "53",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Hawk's Eggâ€ ",
+    "id": "54",
+    "weight": "0.5"
+  },
+  {
+    "﻿Ingredient": "Histcarp",
+    "id": "55",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Honeycomb",
+    "id": "56",
+    "weight": "1"
+  },
+  {
+    "﻿Ingredient": "Human Flesh",
+    "id": "57",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Human Heart",
+    "id": "58",
+    "weight": "1"
+  },
+  {
+    "﻿Ingredient": "Ice Wraith Teeth",
+    "id": "59",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Imp Stool",
+    "id": "60",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Jarrin Root",
+    "id": "61",
+    "weight": "0.5"
+  },
+  {
+    "﻿Ingredient": "Jazbay Grapes",
+    "id": "62",
+    "weight": "0.2"
+  },
+  {
+    "﻿Ingredient": "Juniper Berries",
+    "id": "63",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Large Antlers",
+    "id": "64",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Lavender",
+    "id": "65",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Luna Moth Wing",
+    "id": "66",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Moon Sugar",
+    "id": "67",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Mora Tapinella",
+    "id": "68",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Mudcrab Chitin",
+    "id": "69",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Namira's Rot",
+    "id": "70",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Netch Jelly",
+    "id": "71",
+    "weight": "0.5"
+  },
+  {
+    "﻿Ingredient": "Nightshade",
+    "id": "72",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Nirnroot",
+    "id": "73",
+    "weight": "0.2"
+  },
+  {
+    "﻿Ingredient": "Nordic Barnacle",
+    "id": "74",
+    "weight": "0.2"
+  },
+  {
+    "﻿Ingredient": "Orange Dartwing",
+    "id": "75",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Pearl",
+    "id": "76",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Pine Thrush Egg",
+    "id": "77",
+    "weight": "0.5"
+  },
+  {
+    "﻿Ingredient": "Poison Bloom*",
+    "id": "78",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Powdered Mammoth Tusk",
+    "id": "79",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Purple Mountain Flower",
+    "id": "80",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Red Mountain Flower",
+    "id": "81",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "River Betty",
+    "id": "82",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Rock Warbler Egg",
+    "id": "83",
+    "weight": "0.5"
+  },
+  {
+    "﻿Ingredient": "Sabre Cat Tooth",
+    "id": "84",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Salmon Roeâ€ ",
+    "id": "85",
+    "weight": "0.2"
+  },
+  {
+    "﻿Ingredient": "Salt Pile",
+    "id": "86",
+    "weight": "0.2"
+  },
+  {
+    "﻿Ingredient": "Scaly Pholiota",
+    "id": "87",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Scathecraw",
+    "id": "88",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Silverside Perch",
+    "id": "89",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Skeever Tail",
+    "id": "90",
+    "weight": "0.2"
+  },
+  {
+    "﻿Ingredient": "Slaughterfish Egg",
+    "id": "91",
+    "weight": "0.2"
+  },
+  {
+    "﻿Ingredient": "Slaughterfish Scales",
+    "id": "92",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Small Antlers",
+    "id": "93",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Small Pearl",
+    "id": "94",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Snowberries",
+    "id": "95",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Spawn Ash",
+    "id": "96",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Spider Egg",
+    "id": "97",
+    "weight": "0.2"
+  },
+  {
+    "﻿Ingredient": "Spriggan Sap",
+    "id": "98",
+    "weight": "0.2"
+  },
+  {
+    "﻿Ingredient": "Swamp Fungal Pod",
+    "id": "99",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Taproot",
+    "id": "100",
+    "weight": "0.5"
+  },
+  {
+    "﻿Ingredient": "Thistle Branch",
+    "id": "101",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Torchbug Thorax",
+    "id": "102",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Trama Root",
+    "id": "103",
+    "weight": "0.2"
+  },
+  {
+    "﻿Ingredient": "Troll Fat",
+    "id": "104",
+    "weight": "1"
+  },
+  {
+    "﻿Ingredient": "Tundra Cotton",
+    "id": "105",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Vampire Dust",
+    "id": "106",
+    "weight": "0.2"
+  },
+  {
+    "﻿Ingredient": "Void Salts",
+    "id": "107",
+    "weight": "0.2"
+  },
+  {
+    "﻿Ingredient": "Wheat",
+    "id": "108",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "White Cap",
+    "id": "109",
+    "weight": "0.3"
+  },
+  {
+    "﻿Ingredient": "Wisp Wrappings",
+    "id": "110",
+    "weight": "0.1"
+  },
+  {
+    "﻿Ingredient": "Yellow Mountain Flower*",
+    "id": "111",
+    "weight": "0.1"
+  }
+]

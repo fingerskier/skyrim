@@ -1,0 +1,222 @@
+[
+  {
+    "﻿name": "Cure Disease",
+    "id": "1"
+  },
+  {
+    "﻿name": "Damage Health",
+    "id": "2"
+  },
+  {
+    "﻿name": "Damage Magicka",
+    "id": "3"
+  },
+  {
+    "﻿name": "Damage Magicka Regen",
+    "id": "4"
+  },
+  {
+    "﻿name": "Damage Stamina",
+    "id": "5"
+  },
+  {
+    "﻿name": "Damage Stamina Regen",
+    "id": "6"
+  },
+  {
+    "﻿name": "Fear",
+    "id": "7"
+  },
+  {
+    "﻿name": "Fortify Alteration",
+    "id": "8"
+  },
+  {
+    "﻿name": "Fortify Barter",
+    "id": "9"
+  },
+  {
+    "﻿name": "Fortify Block",
+    "id": "10"
+  },
+  {
+    "﻿name": "Fortify Carry Weight",
+    "id": "11"
+  },
+  {
+    "﻿name": "Fortify Conjuration",
+    "id": "12"
+  },
+  {
+    "﻿name": "Fortify Destruction",
+    "id": "13"
+  },
+  {
+    "﻿name": "Fortify Enchanting",
+    "id": "14"
+  },
+  {
+    "﻿name": "Fortify Health",
+    "id": "15"
+  },
+  {
+    "﻿name": "Fortify Heavy Armor",
+    "id": "16"
+  },
+  {
+    "﻿name": "Fortify Illusion",
+    "id": "17"
+  },
+  {
+    "﻿name": "Fortify Light Armor",
+    "id": "18"
+  },
+  {
+    "﻿name": "Fortify Lockpicking",
+    "id": "19"
+  },
+  {
+    "﻿name": "Fortify Magicka",
+    "id": "20"
+  },
+  {
+    "﻿name": "Fortify Marksman",
+    "id": "21"
+  },
+  {
+    "﻿name": "Fortify One-Handed",
+    "id": "22"
+  },
+  {
+    "﻿name": "Fortify Pickpocket",
+    "id": "23"
+  },
+  {
+    "﻿name": "Fortify Restoration",
+    "id": "24"
+  },
+  {
+    "﻿name": "Fortify Smithing",
+    "id": "25"
+  },
+  {
+    "﻿name": "Fortify Sneak",
+    "id": "26"
+  },
+  {
+    "﻿name": "Fortify Stamina",
+    "id": "27"
+  },
+  {
+    "﻿name": "Fortify Two-Handed",
+    "id": "28"
+  },
+  {
+    "﻿name": "Frenzy",
+    "id": "29"
+  },
+  {
+    "﻿name": "Invisibility",
+    "id": "30"
+  },
+  {
+    "﻿name": "Lingering Damage Health",
+    "id": "31"
+  },
+  {
+    "﻿name": "Lingering Damage Magicka",
+    "id": "32"
+  },
+  {
+    "﻿name": "Lingering Damage Stamina",
+    "id": "33"
+  },
+  {
+    "﻿name": "Paralysis",
+    "id": "34"
+  },
+  {
+    "﻿name": "Ravage Health",
+    "id": "35"
+  },
+  {
+    "﻿name": "Ravage Magicka",
+    "id": "36"
+  },
+  {
+    "﻿name": "Ravage Stamina",
+    "id": "37"
+  },
+  {
+    "﻿name": "Regenerate Health",
+    "id": "38"
+  },
+  {
+    "﻿name": "Regenerate Magicka",
+    "id": "39"
+  },
+  {
+    "﻿name": "Regenerate Stamina",
+    "id": "40"
+  },
+  {
+    "﻿name": "Resist Fire",
+    "id": "41"
+  },
+  {
+    "﻿name": "Resist Frost",
+    "id": "42"
+  },
+  {
+    "﻿name": "Resist Magic",
+    "id": "43"
+  },
+  {
+    "﻿name": "Resist Poison",
+    "id": "44"
+  },
+  {
+    "﻿name": "Resist Shock",
+    "id": "45"
+  },
+  {
+    "﻿name": "Restore Health",
+    "id": "46"
+  },
+  {
+    "﻿name": "Restore Magicka",
+    "id": "47"
+  },
+  {
+    "﻿name": "Restore Stamina",
+    "id": "48"
+  },
+  {
+    "﻿name": "Slow",
+    "id": "49"
+  },
+  {
+    "﻿name": "Waterbreathing",
+    "id": "50"
+  },
+  {
+    "﻿name": "Weakness to Fire",
+    "id": "51"
+  },
+  {
+    "﻿name": "Weakness to Frost",
+    "id": "52"
+  },
+  {
+    "﻿name": "Weakness to Magic",
+    "id": "53"
+  },
+  {
+    "﻿name": "Weakness to Poison",
+    "id": "54"
+  },
+  {
+    "﻿name": "Weakness to Shock",
+    "id": "55"
+  }
+]
