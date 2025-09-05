@@ -1,12 +1,61 @@
-# React + Vite
+# Skyrim Helpers
+**_This is bunch of tools to help w/ character usage/development_**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Alchemy
 
-Currently, two official plugins are available:
+```
+function ingredientsForEffects(effects):
+    results = []
+    for each ingredient in ALL_INGREDIENTS:
+        if ingredient.effects intersects effects:
+            results.append(ingredient)
+    return results
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+function possiblePotions(ingredientList):
+    combos = []
+    for each combination of 2 or 3 ingredients in ingredientList:
+        shared = intersection of their effects
+        if shared is not empty:
+            combos.append({ingredients: combo, effects: shared})
+    return combos
+```
 
-## Expanding the ESLint configuration
+```
+function potionValue(ingredients[], player, effectsRef, overrides):
+    // 1) collect effects present in >=2 ingredients
+    effectCounts = map<Effect,int>()
+    perEffectIngredients = map<Effect, list<Ingredient>>()
+    for ing in ingredients:
+        for eff in ing.effects:
+            effectCounts[eff] += 1
+            perEffectIngredients[eff].append(ing)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    surviving = [eff for eff,count in effectCounts if count >= 2]
+    if surviving is empty: return {valid:false, value:0, effects:[]}
+
+    totalValue = 0
+    effectsOut = []
+    for eff in surviving:
+        // 2) choose base mag/dur from strongest ingredient for this effect
+        base = effectsRef[eff]
+        best = base
+        // apply any per-ingredient overrides if you track them
+        for ing in perEffectIngredients[eff]:
+            ov = overrides.get((ing.name, eff))
+            if ov is strongerThan(best): best = merge(base, ov)
+
+        // 3) compute scaled magnitude/duration + price contribution
+        stats = effectStats(best, player)
+        totalValue += stats.price
+        effectsOut.append({effect: eff, magnitude: stats.magnitude, duration: stats.duration, price: stats.price})
+
+    // 4) pick “dominant” effect for naming/type if you care
+    dominant = argmax(effectsOut, by=price)
+
+    return {valid:true, value: totalValue, dominant, effects: effectsOut}
+```
+
+You can select all ingredients that have on-hand, and the number of each of those.
+You can also input player stats: alchemy skill, fortify alchemy %, alchemist perk level, physician perk level, benefactor perk level, poisoner perk level, seeker of shadows.
