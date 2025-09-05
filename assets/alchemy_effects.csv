@@ -1,0 +1,56 @@
+﻿name,id
+Cure Disease,1
+Damage Health,2
+Damage Magicka,3
+Damage Magicka Regen,4
+Damage Stamina,5
+Damage Stamina Regen,6
+Fear,7
+Fortify Alteration,8
+Fortify Barter,9
+Fortify Block,10
+Fortify Carry Weight,11
+Fortify Conjuration,12
+Fortify Destruction,13
+Fortify Enchanting,14
+Fortify Health,15
+Fortify Heavy Armor,16
+Fortify Illusion,17
+Fortify Light Armor,18
+Fortify Lockpicking,19
+Fortify Magicka,20
+Fortify Marksman,21
+Fortify One-Handed,22
+Fortify Pickpocket,23
+Fortify Restoration,24
+Fortify Smithing,25
+Fortify Sneak,26
+Fortify Stamina,27
+Fortify Two-Handed,28
+Frenzy,29
+Invisibility,30
+Lingering Damage Health,31
+Lingering Damage Magicka,32
+Lingering Damage Stamina,33
+Paralysis,34
+Ravage Health,35
+Ravage Magicka,36
+Ravage Stamina,37
+Regenerate Health,38
+Regenerate Magicka,39
+Regenerate Stamina,40
+Resist Fire,41
+Resist Frost,42
+Resist Magic,43
+Resist Poison,44
+Resist Shock,45
+Restore Health,46
+Restore Magicka,47
+Restore Stamina,48
+Slow,49
+Waterbreathing,50
+Weakness to Fire,51
+Weakness to Frost,52
+Weakness to Magic,53
+Weakness to Poison,54
+Weakness to Shock,55
