@@ -1,222 +1,222 @@
 [
   {
-    "﻿name": "Cure Disease",
+    "name": "Cure Disease",
     "id": "1"
   },
   {
-    "﻿name": "Damage Health",
+    "name": "Damage Health",
     "id": "2"
   },
   {
-    "﻿name": "Damage Magicka",
+    "name": "Damage Magicka",
     "id": "3"
   },
   {
-    "﻿name": "Damage Magicka Regen",
+    "name": "Damage Magicka Regen",
     "id": "4"
   },
   {
-    "﻿name": "Damage Stamina",
+    "name": "Damage Stamina",
     "id": "5"
   },
   {
-    "﻿name": "Damage Stamina Regen",
+    "name": "Damage Stamina Regen",
     "id": "6"
   },
   {
-    "﻿name": "Fear",
+    "name": "Fear",
     "id": "7"
   },
   {
-    "﻿name": "Fortify Alteration",
+    "name": "Fortify Alteration",
     "id": "8"
   },
   {
-    "﻿name": "Fortify Barter",
+    "name": "Fortify Barter",
     "id": "9"
   },
   {
-    "﻿name": "Fortify Block",
+    "name": "Fortify Block",
     "id": "10"
   },
   {
-    "﻿name": "Fortify Carry Weight",
+    "name": "Fortify Carry Weight",
     "id": "11"
   },
   {
-    "﻿name": "Fortify Conjuration",
+    "name": "Fortify Conjuration",
     "id": "12"
   },
   {
-    "﻿name": "Fortify Destruction",
+    "name": "Fortify Destruction",
     "id": "13"
   },
   {
-    "﻿name": "Fortify Enchanting",
+    "name": "Fortify Enchanting",
     "id": "14"
   },
   {
-    "﻿name": "Fortify Health",
+    "name": "Fortify Health",
     "id": "15"
   },
   {
-    "﻿name": "Fortify Heavy Armor",
+    "name": "Fortify Heavy Armor",
     "id": "16"
   },
   {
-    "﻿name": "Fortify Illusion",
+    "name": "Fortify Illusion",
     "id": "17"
   },
   {
-    "﻿name": "Fortify Light Armor",
+    "name": "Fortify Light Armor",
     "id": "18"
   },
   {
-    "﻿name": "Fortify Lockpicking",
+    "name": "Fortify Lockpicking",
     "id": "19"
   },
   {
-    "﻿name": "Fortify Magicka",
+    "name": "Fortify Magicka",
     "id": "20"
   },
   {
-    "﻿name": "Fortify Marksman",
+    "name": "Fortify Marksman",
     "id": "21"
   },
   {
-    "﻿name": "Fortify One-Handed",
+    "name": "Fortify One-Handed",
     "id": "22"
   },
   {
-    "﻿name": "Fortify Pickpocket",
+    "name": "Fortify Pickpocket",
     "id": "23"
   },
   {
-    "﻿name": "Fortify Restoration",
+    "name": "Fortify Restoration",
     "id": "24"
   },
   {
-    "﻿name": "Fortify Smithing",
+    "name": "Fortify Smithing",
     "id": "25"
   },
   {
-    "﻿name": "Fortify Sneak",
+    "name": "Fortify Sneak",
     "id": "26"
   },
   {
-    "﻿name": "Fortify Stamina",
+    "name": "Fortify Stamina",
     "id": "27"
   },
   {
-    "﻿name": "Fortify Two-Handed",
+    "name": "Fortify Two-Handed",
     "id": "28"
   },
   {
-    "﻿name": "Frenzy",
+    "name": "Frenzy",
     "id": "29"
   },
   {
-    "﻿name": "Invisibility",
+    "name": "Invisibility",
     "id": "30"
   },
   {
-    "﻿name": "Lingering Damage Health",
+    "name": "Lingering Damage Health",
     "id": "31"
   },
   {
-    "﻿name": "Lingering Damage Magicka",
+    "name": "Lingering Damage Magicka",
     "id": "32"
   },
   {
-    "﻿name": "Lingering Damage Stamina",
+    "name": "Lingering Damage Stamina",
     "id": "33"
   },
   {
-    "﻿name": "Paralysis",
+    "name": "Paralysis",
     "id": "34"
   },
   {
-    "﻿name": "Ravage Health",
+    "name": "Ravage Health",
     "id": "35"
   },
   {
-    "﻿name": "Ravage Magicka",
+    "name": "Ravage Magicka",
     "id": "36"
   },
   {
-    "﻿name": "Ravage Stamina",
+    "name": "Ravage Stamina",
     "id": "37"
   },
   {
-    "﻿name": "Regenerate Health",
+    "name": "Regenerate Health",
     "id": "38"
   },
   {
-    "﻿name": "Regenerate Magicka",
+    "name": "Regenerate Magicka",
     "id": "39"
   },
   {
-    "﻿name": "Regenerate Stamina",
+    "name": "Regenerate Stamina",
     "id": "40"
   },
   {
-    "﻿name": "Resist Fire",
+    "name": "Resist Fire",
     "id": "41"
   },
   {
-    "﻿name": "Resist Frost",
+    "name": "Resist Frost",
     "id": "42"
   },
   {
-    "﻿name": "Resist Magic",
+    "name": "Resist Magic",
     "id": "43"
   },
   {
-    "﻿name": "Resist Poison",
+    "name": "Resist Poison",
     "id": "44"
   },
   {
-    "﻿name": "Resist Shock",
+    "name": "Resist Shock",
     "id": "45"
   },
   {
-    "﻿name": "Restore Health",
+    "name": "Restore Health",
     "id": "46"
   },
   {
-    "﻿name": "Restore Magicka",
+    "name": "Restore Magicka",
     "id": "47"
   },
   {
-    "﻿name": "Restore Stamina",
+    "name": "Restore Stamina",
     "id": "48"
   },
   {
-    "﻿name": "Slow",
+    "name": "Slow",
     "id": "49"
   },
   {
-    "﻿name": "Waterbreathing",
+    "name": "Waterbreathing",
     "id": "50"
   },
   {
-    "﻿name": "Weakness to Fire",
+    "name": "Weakness to Fire",
     "id": "51"
   },
   {
-    "﻿name": "Weakness to Frost",
+    "name": "Weakness to Frost",
     "id": "52"
   },
   {
-    "﻿name": "Weakness to Magic",
+    "name": "Weakness to Magic",
     "id": "53"
   },
   {
-    "﻿name": "Weakness to Poison",
+    "name": "Weakness to Poison",
     "id": "54"
   },
   {
-    "﻿name": "Weakness to Shock",
+    "name": "Weakness to Shock",
     "id": "55"
   }
 ]

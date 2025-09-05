@@ -1,0 +1,557 @@
+[
+  {
+    "name": "Abecean Longfin",
+    "id": "1",
+    "weight": "0.5"
+  },
+  {
+    "name": "Ancestor Moth Wing*",
+    "id": "2",
+    "weight": "0.1"
+  },
+  {
+    "name": "Ash Creep Cluster",
+    "id": "3",
+    "weight": "0.3"
+  },
+  {
+    "name": "Ash Hopper Jelly",
+    "id": "4",
+    "weight": "0.3"
+  },
+  {
+    "name": "Ashen Grass Pod",
+    "id": "5",
+    "weight": "0.1"
+  },
+  {
+    "name": "Bear Claws",
+    "id": "6",
+    "weight": "0.1"
+  },
+  {
+    "name": "Bee",
+    "id": "7",
+    "weight": "0.1"
+  },
+  {
+    "name": "Beehive Husk",
+    "id": "8",
+    "weight": "1"
+  },
+  {
+    "name": "Berit's Ashes(identical to Bone Meal)",
+    "id": "9",
+    "weight": "0.5"
+  },
+  {
+    "name": "Bleeding Crown",
+    "id": "10",
+    "weight": "0.3"
+  },
+  {
+    "name": "Blisterwort",
+    "id": "11",
+    "weight": "0.2"
+  },
+  {
+    "name": "Blue Butterfly Wing",
+    "id": "12",
+    "weight": "0.1"
+  },
+  {
+    "name": "Blue Dartwing",
+    "id": "13",
+    "weight": "0.1"
+  },
+  {
+    "name": "Blue Mountain Flower",
+    "id": "14",
+    "weight": "0.1"
+  },
+  {
+    "name": "Boar Tusk",
+    "id": "15",
+    "weight": "0.5"
+  },
+  {
+    "name": "Bone Meal",
+    "id": "16",
+    "weight": "0.5"
+  },
+  {
+    "name": "Briar Heart",
+    "id": "17",
+    "weight": "0.5"
+  },
+  {
+    "name": "Burnt Spriggan Wood",
+    "id": "18",
+    "weight": "0.5"
+  },
+  {
+    "name": "Butterfly Wing",
+    "id": "19",
+    "weight": "0.1"
+  },
+  {
+    "name": "Canis Root",
+    "id": "20",
+    "weight": "0.1"
+  },
+  {
+    "name": "Charred Skeever Hide",
+    "id": "21",
+    "weight": "0.5"
+  },
+  {
+    "name": "Chaurus Eggs",
+    "id": "22",
+    "weight": "0.2"
+  },
+  {
+    "name": "Chaurus Hunter Antennae*",
+    "id": "23",
+    "weight": "0.1"
+  },
+  {
+    "name": "Chicken's Egg",
+    "id": "24",
+    "weight": "0.5"
+  },
+  {
+    "name": "Creep Cluster",
+    "id": "25",
+    "weight": "0.2"
+  },
+  {
+    "name": "Crimson Nirnroot",
+    "id": "26",
+    "weight": "0.2"
+  },
+  {
+    "name": "Cyrodilic Spadetail",
+    "id": "27",
+    "weight": "0.3"
+  },
+  {
+    "name": "Daedra Heart",
+    "id": "28",
+    "weight": "0.5"
+  },
+  {
+    "name": "Deathbell",
+    "id": "29",
+    "weight": "0.1"
+  },
+  {
+    "name": "Dragon's Tongue",
+    "id": "30",
+    "weight": "0.1"
+  },
+  {
+    "name": "Dwarven Oil",
+    "id": "31",
+    "weight": "0.3"
+  },
+  {
+    "name": "Ectoplasm",
+    "id": "32",
+    "weight": "0.1"
+  },
+  {
+    "name": "Elves Ear",
+    "id": "33",
+    "weight": "0.1"
+  },
+  {
+    "name": "Emperor Parasol Moss",
+    "id": "34",
+    "weight": "0.3"
+  },
+  {
+    "name": "Eye of Sabre Cat",
+    "id": "35",
+    "weight": "0.1"
+  },
+  {
+    "name": "Falmer Ear",
+    "id": "36",
+    "weight": "0.2"
+  },
+  {
+    "name": "Felsaad Tern Feathers",
+    "id": "37",
+    "weight": "0.1"
+  },
+  {
+    "name": "Fire Salts",
+    "id": "38",
+    "weight": "0.3"
+  },
+  {
+    "name": "Fly Amanita",
+    "id": "39",
+    "weight": "0.1"
+  },
+  {
+    "name": "Frost Mirriam",
+    "id": "40",
+    "weight": "0.1"
+  },
+  {
+    "name": "Frost Salts",
+    "id": "41",
+    "weight": "0.3"
+  },
+  {
+    "name": "Garlic",
+    "id": "42",
+    "weight": "0.3"
+  },
+  {
+    "name": "Giant Lichen",
+    "id": "43",
+    "weight": "0.3"
+  },
+  {
+    "name": "Giant's Toe",
+    "id": "44",
+    "weight": "1"
+  },
+  {
+    "name": "Gleamblossom*",
+    "id": "45",
+    "weight": "0.1"
+  },
+  {
+    "name": "Glow Dust",
+    "id": "46",
+    "weight": "0.5"
+  },
+  {
+    "name": "Glowing Mushroom",
+    "id": "47",
+    "weight": "0.2"
+  },
+  {
+    "name": "Grass Pod",
+    "id": "48",
+    "weight": "0.1"
+  },
+  {
+    "name": "Hagraven Claw",
+    "id": "49",
+    "weight": "0.3"
+  },
+  {
+    "name": "Hagraven Feathers",
+    "id": "50",
+    "weight": "0.1"
+  },
+  {
+    "name": "Hanging Moss",
+    "id": "51",
+    "weight": "0.3"
+  },
+  {
+    "name": "Hawk Beak",
+    "id": "52",
+    "weight": "0.3"
+  },
+  {
+    "name": "Hawk Feathers",
+    "id": "53",
+    "weight": "0.1"
+  },
+  {
+    "name": "Hawk's Eggâ€ ",
+    "id": "54",
+    "weight": "0.5"
+  },
+  {
+    "name": "Histcarp",
+    "id": "55",
+    "weight": "0.3"
+  },
+  {
+    "name": "Honeycomb",
+    "id": "56",
+    "weight": "1"
+  },
+  {
+    "name": "Human Flesh",
+    "id": "57",
+    "weight": "0.3"
+  },
+  {
+    "name": "Human Heart",
+    "id": "58",
+    "weight": "1"
+  },
+  {
+    "name": "Ice Wraith Teeth",
+    "id": "59",
+    "weight": "0.3"
+  },
+  {
+    "name": "Imp Stool",
+    "id": "60",
+    "weight": "0.3"
+  },
+  {
+    "name": "Jarrin Root",
+    "id": "61",
+    "weight": "0.5"
+  },
+  {
+    "name": "Jazbay Grapes",
+    "id": "62",
+    "weight": "0.2"
+  },
+  {
+    "name": "Juniper Berries",
+    "id": "63",
+    "weight": "0.1"
+  },
+  {
+    "name": "Large Antlers",
+    "id": "64",
+    "weight": "0.1"
+  },
+  {
+    "name": "Lavender",
+    "id": "65",
+    "weight": "0.1"
+  },
+  {
+    "name": "Luna Moth Wing",
+    "id": "66",
+    "weight": "0.1"
+  },
+  {
+    "name": "Moon Sugar",
+    "id": "67",
+    "weight": "0.3"
+  },
+  {
+    "name": "Mora Tapinella",
+    "id": "68",
+    "weight": "0.3"
+  },
+  {
+    "name": "Mudcrab Chitin",
+    "id": "69",
+    "weight": "0.3"
+  },
+  {
+    "name": "Namira's Rot",
+    "id": "70",
+    "weight": "0.3"
+  },
+  {
+    "name": "Netch Jelly",
+    "id": "71",
+    "weight": "0.5"
+  },
+  {
+    "name": "Nightshade",
+    "id": "72",
+    "weight": "0.1"
+  },
+  {
+    "name": "Nirnroot",
+    "id": "73",
+    "weight": "0.2"
+  },
+  {
+    "name": "Nordic Barnacle",
+    "id": "74",
+    "weight": "0.2"
+  },
+  {
+    "name": "Orange Dartwing",
+    "id": "75",
+    "weight": "0.1"
+  },
+  {
+    "name": "Pearl",
+    "id": "76",
+    "weight": "0.1"
+  },
+  {
+    "name": "Pine Thrush Egg",
+    "id": "77",
+    "weight": "0.5"
+  },
+  {
+    "name": "Poison Bloom*",
+    "id": "78",
+    "weight": "0.3"
+  },
+  {
+    "name": "Powdered Mammoth Tusk",
+    "id": "79",
+    "weight": "0.1"
+  },
+  {
+    "name": "Purple Mountain Flower",
+    "id": "80",
+    "weight": "0.1"
+  },
+  {
+    "name": "Red Mountain Flower",
+    "id": "81",
+    "weight": "0.1"
+  },
+  {
+    "name": "River Betty",
+    "id": "82",
+    "weight": "0.3"
+  },
+  {
+    "name": "Rock Warbler Egg",
+    "id": "83",
+    "weight": "0.5"
+  },
+  {
+    "name": "Sabre Cat Tooth",
+    "id": "84",
+    "weight": "0.1"
+  },
+  {
+    "name": "Salmon Roeâ€ ",
+    "id": "85",
+    "weight": "0.2"
+  },
+  {
+    "name": "Salt Pile",
+    "id": "86",
+    "weight": "0.2"
+  },
+  {
+    "name": "Scaly Pholiota",
+    "id": "87",
+    "weight": "0.3"
+  },
+  {
+    "name": "Scathecraw",
+    "id": "88",
+    "weight": "0.1"
+  },
+  {
+    "name": "Silverside Perch",
+    "id": "89",
+    "weight": "0.3"
+  },
+  {
+    "name": "Skeever Tail",
+    "id": "90",
+    "weight": "0.2"
+  },
+  {
+    "name": "Slaughterfish Egg",
+    "id": "91",
+    "weight": "0.2"
+  },
+  {
+    "name": "Slaughterfish Scales",
+    "id": "92",
+    "weight": "0.1"
+  },
+  {
+    "name": "Small Antlers",
+    "id": "93",
+    "weight": "0.1"
+  },
+  {
+    "name": "Small Pearl",
+    "id": "94",
+    "weight": "0.1"
+  },
+  {
+    "name": "Snowberries",
+    "id": "95",
+    "weight": "0.1"
+  },
+  {
+    "name": "Spawn Ash",
+    "id": "96",
+    "weight": "0.1"
+  },
+  {
+    "name": "Spider Egg",
+    "id": "97",
+    "weight": "0.2"
+  },
+  {
+    "name": "Spriggan Sap",
+    "id": "98",
+    "weight": "0.2"
+  },
+  {
+    "name": "Swamp Fungal Pod",
+    "id": "99",
+    "weight": "0.3"
+  },
+  {
+    "name": "Taproot",
+    "id": "100",
+    "weight": "0.5"
+  },
+  {
+    "name": "Thistle Branch",
+    "id": "101",
+    "weight": "0.1"
+  },
+  {
+    "name": "Torchbug Thorax",
+    "id": "102",
+    "weight": "0.1"
+  },
+  {
+    "name": "Trama Root",
+    "id": "103",
+    "weight": "0.2"
+  },
+  {
+    "name": "Troll Fat",
+    "id": "104",
+    "weight": "1"
+  },
+  {
+    "name": "Tundra Cotton",
+    "id": "105",
+    "weight": "0.1"
+  },
+  {
+    "name": "Vampire Dust",
+    "id": "106",
+    "weight": "0.2"
+  },
+  {
+    "name": "Void Salts",
+    "id": "107",
+    "weight": "0.2"
+  },
+  {
+    "name": "Wheat",
+    "id": "108",
+    "weight": "0.1"
+  },
+  {
+    "name": "White Cap",
+    "id": "109",
+    "weight": "0.3"
+  },
+  {
+    "name": "Wisp Wrappings",
+    "id": "110",
+    "weight": "0.1"
+  },
+  {
+    "name": "Yellow Mountain Flower*",
+    "id": "111",
+    "weight": "0.1"
+  }
+]
