@@ -145,20 +145,32 @@ export default function AlchemyCalculator() {
         <div>
           <h3>Permutations</h3>
           {permutations.length ? (
-            <ul>
-              {permutations.map((perm, i) => (
-                <li key={i}>
-                  {perm.ids
-                    .map(id => ingredients.find(ing => ing.id === id)?.name)
-                    .join(' + ')}
-                  {` (`}
-                  {perm.effects
-                    .map(eid => effectMap[eid]?.name)
-                    .join(', ')}
-                  {`)`}
-                </li>
-              ))}
-            </ul>
+            <table>
+              <thead>
+                <tr>
+                  <th>Ingredient 1</th>
+                  <th>Ingredient 2</th>
+                  <th>Ingredient 3</th>
+                  <th>Effects</th>
+                </tr>
+              </thead>
+              <tbody>
+                {permutations.map((perm, i) => (
+                  <tr key={i}>
+                    {[0, 1, 2].map(idx => (
+                      <td key={idx}>
+                        {ingredients.find(ing => ing.id === perm.ids[idx])?.name || ''}
+                      </td>
+                    ))}
+                    <td>
+                      {perm.effects
+                        .map(eid => effectMap[eid]?.name)
+                        .join(', ')}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           ) : (
             <p>No permutations match the selection.</p>
           )}
