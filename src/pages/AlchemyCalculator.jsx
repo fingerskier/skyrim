@@ -34,40 +34,23 @@ export default function AlchemyCalculator() {
 
   const clear = setter => setter([])
 
-  const matchingIngredients = useMemo(() => {
-    const sharesEffectWithSelected = id => {
-      const effectsForIng = ingredientEffectMap[id] || []
-      return selectedIngredients.some(
-        otherId =>
-          otherId !== id &&
-          (ingredientEffectMap[otherId] || []).some(eid => effectsForIng.includes(eid)),
-      )
-    }
+  const sortedIngredients = useMemo(() =>
+    [...ingredients].sort((a, b) => {
+      const aSelected = selectedIngredients.includes(a.id)
+      const bSelected = selectedIngredients.includes(b.id)
+      if (aSelected === bSelected) return a.name.localeCompare(b.name)
+      return aSelected ? -1 : 1
+    }),
+  [selectedIngredients])
 
-    const results = ingredients.filter(ing => {
-      const effectsForIng = ingredientEffectMap[ing.id] || []
-      const matchesEffects = selectedEffects.every(eid => effectsForIng.includes(eid))
-
-      if (selectedIngredients.length === 0) return matchesEffects
-
-      return (
-        selectedIngredients.includes(ing.id) &&
-          matchesEffects &&
-          sharesEffectWithSelected(ing.id)
-      )
-    })
-
-    const valueFor = ing => {
-      const effectIds = ingredientEffectMap[ing.id] || []
-      return selectedEffects.reduce(
-        (sum, eid) =>
-          effectIds.includes(eid) ? sum + (effectMap[eid]?.value || 0) : sum,
-        0,
-      )
-    }
-
-    return results.sort((a, b) => valueFor(b) - valueFor(a))
-  }, [selectedIngredients, selectedEffects])
+  const sortedEffects = useMemo(() =>
+    [...effects].sort((a, b) => {
+      const aSelected = selectedEffects.includes(a.id)
+      const bSelected = selectedEffects.includes(b.id)
+      if (aSelected === bSelected) return a.name.localeCompare(b.name)
+      return aSelected ? -1 : 1
+    }),
+  [selectedEffects])
 
   const permutations = useMemo(() => {
     const ids = selectedIngredients.filter(id =>
@@ -141,7 +124,7 @@ export default function AlchemyCalculator() {
         <div className={style.ingredients}>
           <h3>Ingredients</h3>
           <button onClick={() => clear(setSelectedIngredients)}>Clear</button>
-          {ingredients.map(ing => (
+          {sortedIngredients.map(ing => (
             <label key={ing.id} className={style.ingredient}>
               <input
                 type="checkbox"
@@ -156,7 +139,7 @@ export default function AlchemyCalculator() {
         <div className={style.effects}>
           <h3>Effects</h3>
           <button onClick={() => clear(setSelectedEffects)}>Clear</button>
-          {effects.map(eff => (
+          {sortedEffects.map(eff => (
             <label key={eff.id} style={{ display: 'block' }}>
               <input
                 type="checkbox"
@@ -167,19 +150,6 @@ export default function AlchemyCalculator() {
             </label>
           ))}
         </div>
-
-        {/* <div>
-          <h3>Matches</h3>
-          {matchingIngredients.length ? (
-            <ul>
-              {matchingIngredients.map(ing => (
-                <li key={ing.id}>{ing.name}</li>
-              ))}
-            </ul>
-          ) : (
-            <p>No ingredients match the selection.</p>
-          )}
-        </div> */}
 
         <div className={style.permutations}>
           <h3>Permutations</h3>
