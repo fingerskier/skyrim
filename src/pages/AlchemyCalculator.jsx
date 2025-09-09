@@ -28,12 +28,26 @@ export default function AlchemyCalculator() {
   const clear = setter => setter([])
 
   const matchingIngredients = useMemo(() => {
+    const sharesEffectWithSelected = id => {
+      const effectsForIng = ingredientEffectMap[id] || []
+      return selectedIngredients.some(
+        otherId =>
+          otherId !== id &&
+          (ingredientEffectMap[otherId] || []).some(eid => effectsForIng.includes(eid)),
+      )
+    }
+
     const results = ingredients.filter(ing => {
       const effectsForIng = ingredientEffectMap[ing.id] || []
-      const matchesIngredient =
-        selectedIngredients.length === 0 || selectedIngredients.includes(ing.id)
       const matchesEffects = selectedEffects.every(eid => effectsForIng.includes(eid))
-      return matchesIngredient && matchesEffects
+
+      if (selectedIngredients.length === 0) return matchesEffects
+
+      return (
+        selectedIngredients.includes(ing.id) &&
+          matchesEffects &&
+          sharesEffectWithSelected(ing.id)
+      )
     })
 
     const valueFor = ing => {
