@@ -15,6 +15,11 @@ const effectMap = effects.reduce((acc, eff) => {
   return acc
 }, {})
 
+const ingredientMap = ingredients.reduce((acc, ing) => {
+  acc[ing.id] = ing
+  return acc
+}, {})
+
 export default function AlchemyCalculator() {
   const [selectedIngredients, setSelectedIngredients] = useState([])
   const [selectedEffects, setSelectedEffects] = useState([])
@@ -78,31 +83,65 @@ export default function AlchemyCalculator() {
       return shared
     }
 
-    const out = []
-    const permute = (arr, len, prefix = []) => {
-      if (prefix.length === len) {
-        const shared = sharedEffects(prefix)
-        if (shared.length) out.push({ ids: prefix, effects: shared })
-        return
-      }
+    const combos = new Map()
 
-      arr.forEach((id, idx) => {
-        const remaining = [...arr.slice(0, idx), ...arr.slice(idx + 1)]
-        permute(remaining, len, [...prefix, id])
-      })
+    const addCombo = combo => {
+      const shared = sharedEffects(combo)
+      if (!shared.length) return
+      const key = combo.join(',')
+      const existing = combos.get(key)
+      if (existing) {
+        shared.forEach(eid => existing.effects.add(eid))
+      } else {
+        combos.set(key, { ids: combo, effects: new Set(shared) })
+      }
     }
 
-    if (ids.length >= 2) permute(ids, 2)
-    if (ids.length >= 3) permute(ids, 3)
+    const compareNames = (a, b) =>
+      ingredientMap[a].name.localeCompare(ingredientMap[b].name)
 
-    return out
+    for (let i = 0; i < ids.length; i++) {
+      for (let j = i + 1; j < ids.length; j++) {
+        addCombo([ids[i], ids[j]].sort(compareNames))
+      }
+    }
+
+    for (let i = 0; i < ids.length; i++) {
+      for (let j = i + 1; j < ids.length; j++) {
+        for (let k = j + 1; k < ids.length; k++) {
+          addCombo([ids[i], ids[j], ids[k]].sort(compareNames))
+        }
+      }
+    }
+
+    const result = Array.from(combos.values()).map(({ ids, effects }) => ({
+      ids,
+      effects: Array.from(effects).sort((a, b) =>
+        effectMap[a].name.localeCompare(effectMap[b].name),
+      ),
+    }))
+
+    result.sort((a, b) => {
+      const nameA = a.ids.map(id => ingredientMap[id].name).join(',')
+      const nameB = b.ids.map(id => ingredientMap[id].name).join(',')
+      return nameA.localeCompare(nameB)
+    })
+
+    return result
   }, [selectedIngredients, selectedEffects])
 
   return (
     <div>
       <h2>Alchemy Ingredients</h2>
-      <div style={{ display: 'flex', gap: '2rem' }}>
-        <div>
+      <div
+        style={{
+          display: 'flex',
+          gap: '2rem',
+          justifyContent: 'space-between',
+          alignItems: 'flex-start',
+        }}
+      >
+        <div style={{ flex: 1, maxHeight: '70vh', overflowY: 'auto' }}>
           <h3>Ingredients</h3>
           <button onClick={() => clear(setSelectedIngredients)}>Clear</button>
           {ingredients.map(ing => (
@@ -116,7 +155,7 @@ export default function AlchemyCalculator() {
             </label>
           ))}
         </div>
-        <div>
+        <div style={{ flex: 1, maxHeight: '70vh', overflowY: 'auto' }}>
           <h3>Effects</h3>
           <button onClick={() => clear(setSelectedEffects)}>Clear</button>
           {effects.map(eff => (
@@ -130,7 +169,7 @@ export default function AlchemyCalculator() {
             </label>
           ))}
         </div>
-        <div>
+        <div style={{ flex: 1, maxHeight: '70vh', overflowY: 'auto' }}>
           <h3>Matches</h3>
           {matchingIngredients.length ? (
             <ul>
@@ -142,7 +181,7 @@ export default function AlchemyCalculator() {
             <p>No ingredients match the selection.</p>
           )}
         </div>
-        <div>
+        <div style={{ flex: 1, maxHeight: '70vh', overflowY: 'auto' }}>
           <h3>Permutations</h3>
           {permutations.length ? (
             <table>
@@ -159,7 +198,9 @@ export default function AlchemyCalculator() {
                   <tr key={i}>
                     {[0, 1, 2].map(idx => (
                       <td key={idx}>
-                        {ingredients.find(ing => ing.id === perm.ids[idx])?.name || ''}
+                        {perm.ids[idx]
+                          ? ingredientMap[perm.ids[idx]].name
+                          : ''}
                       </td>
                     ))}
                     <td>
