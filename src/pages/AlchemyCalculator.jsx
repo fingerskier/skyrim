@@ -1,55 +1,99 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { StateLink } from 'ygdrassil'
+import ingredients from '../../assets/alchemy_ingredients.json'
+import effects from '../../assets/alchemy_effects.json'
+import ingredientEffectsRaw from '../../assets/alchemy_ingredient_effects.json'
 
-const potions = [
-  { name: 'Health Potion', ingredients: ['Blue Mountain Flower', 'Wheat'] },
-  { name: 'Fortify Smithing', ingredients: ['Blisterwort', 'Spriggan Sap'] },
-  { name: 'Fortify Barter', ingredients: ['Tundra Cotton', 'Blue Butterfly Wing'] },
-]
+const ingredientEffectMap = ingredientEffectsRaw.reduce((acc, { ingredient_id, effect_id }) => {
+  acc[ingredient_id] = acc[ingredient_id] || []
+  acc[ingredient_id].push(effect_id)
+  return acc
+}, {})
 
-const allIngredients = Array.from(new Set(potions.flatMap(p => p.ingredients))).sort()
+const effectMap = effects.reduce((acc, eff) => {
+  acc[eff.id] = eff
+  return acc
+}, {})
 
 export default function AlchemyCalculator() {
-  const [selected, setSelected] = useState([])
+  const [selectedIngredients, setSelectedIngredients] = useState([])
+  const [selectedEffects, setSelectedEffects] = useState([])
 
-  const toggleIngredient = (ing) => {
-    setSelected(prev =>
-      prev.includes(ing) ? prev.filter(i => i !== ing) : [...prev, ing],
+  const toggle = (value, selected, setter) => {
+    setter(prev =>
+      prev.includes(value) ? prev.filter(v => v !== value) : [...prev, value],
     )
   }
 
-  const results = potions.filter(p => p.ingredients.every(ing => selected.includes(ing)))
+  const clear = setter => setter([])
+
+  const matchingIngredients = useMemo(() => {
+    const results = ingredients.filter(ing => {
+      const effectsForIng = ingredientEffectMap[ing.id] || []
+      const matchesIngredient =
+        selectedIngredients.length === 0 || selectedIngredients.includes(ing.id)
+      const matchesEffects = selectedEffects.every(eid => effectsForIng.includes(eid))
+      return matchesIngredient && matchesEffects
+    })
+
+    const valueFor = ing => {
+      const effectIds = ingredientEffectMap[ing.id] || []
+      return selectedEffects.reduce(
+        (sum, eid) =>
+          effectIds.includes(eid) ? sum + (effectMap[eid]?.value || 0) : sum,
+        0,
+      )
+    }
+
+    return results.sort((a, b) => valueFor(b) - valueFor(a))
+  }, [selectedIngredients, selectedEffects])
 
   return (
     <div>
-      <h2>Alchemy Calculator</h2>
-      <p>Select ingredients to see matching potions.</p>
-      <div>
-        {allIngredients.map(ing => (
-          <label key={ing} style={{ display: 'block' }}>
-            <input
-              type="checkbox"
-              checked={selected.includes(ing)}
-              onChange={() => toggleIngredient(ing)}
-            />
-            {ing}
-          </label>
-        ))}
-      </div>
-      <div>
-        <h3>Matching Potions</h3>
-        {results.length ? (
-          <ul>
-            {results.map(p => (
-              <li key={p.name}>{p.name}</li>
-            ))}
-          </ul>
-        ) : (
-          <p>No potions match the selected ingredients.</p>
-        )}
+      <h2>Alchemy Ingredients</h2>
+      <div style={{ display: 'flex', gap: '2rem' }}>
+        <div>
+          <h3>Ingredients</h3>
+          <button onClick={() => clear(setSelectedIngredients)}>Clear</button>
+          {ingredients.map(ing => (
+            <label key={ing.id} style={{ display: 'block' }}>
+              <input
+                type="checkbox"
+                checked={selectedIngredients.includes(ing.id)}
+                onChange={() => toggle(ing.id, selectedIngredients, setSelectedIngredients)}
+              />
+              {ing.name}
+            </label>
+          ))}
+        </div>
+        <div>
+          <h3>Effects</h3>
+          <button onClick={() => clear(setSelectedEffects)}>Clear</button>
+          {effects.map(eff => (
+            <label key={eff.id} style={{ display: 'block' }}>
+              <input
+                type="checkbox"
+                checked={selectedEffects.includes(eff.id)}
+                onChange={() => toggle(eff.id, selectedEffects, setSelectedEffects)}
+              />
+              {eff.name}
+            </label>
+          ))}
+        </div>
+        <div>
+          <h3>Matches</h3>
+          {matchingIngredients.length ? (
+            <ul>
+              {matchingIngredients.map(ing => (
+                <li key={ing.id}>{ing.name}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>No ingredients match the selection.</p>
+          )}
+        </div>
       </div>
       <StateLink to="landing">Back to menu</StateLink>
     </div>
   )
 }
-

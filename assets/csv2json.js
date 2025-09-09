@@ -1,9 +1,11 @@
 // csv-to-json.mjs
+/* eslint-env node */
 import fs from 'fs';
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 const csv = require('csv-parser');
 
+/* global process */
 const inputFile = process.argv[2] || 'input.csv';
 const outputFile = process.argv[3] || 'output.json';
 
