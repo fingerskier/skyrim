@@ -62,6 +62,42 @@ export default function AlchemyCalculator() {
     return results.sort((a, b) => valueFor(b) - valueFor(a))
   }, [selectedIngredients, selectedEffects])
 
+  const permutations = useMemo(() => {
+    const ids = selectedIngredients.filter(id =>
+      selectedEffects.every(eid => (ingredientEffectMap[id] || []).includes(eid)),
+    )
+
+    const sharedEffects = list => {
+      if (list.length < 2) return []
+      let shared = ingredientEffectMap[list[0]] || []
+      for (let i = 1; i < list.length; i++) {
+        const effectsForIng = ingredientEffectMap[list[i]] || []
+        shared = shared.filter(eid => effectsForIng.includes(eid))
+        if (!shared.length) return []
+      }
+      return shared
+    }
+
+    const out = []
+    const permute = (arr, len, prefix = []) => {
+      if (prefix.length === len) {
+        const shared = sharedEffects(prefix)
+        if (shared.length) out.push({ ids: prefix, effects: shared })
+        return
+      }
+
+      arr.forEach((id, idx) => {
+        const remaining = [...arr.slice(0, idx), ...arr.slice(idx + 1)]
+        permute(remaining, len, [...prefix, id])
+      })
+    }
+
+    if (ids.length >= 2) permute(ids, 2)
+    if (ids.length >= 3) permute(ids, 3)
+
+    return out
+  }, [selectedIngredients, selectedEffects])
+
   return (
     <div>
       <h2>Alchemy Ingredients</h2>
@@ -104,6 +140,27 @@ export default function AlchemyCalculator() {
             </ul>
           ) : (
             <p>No ingredients match the selection.</p>
+          )}
+        </div>
+        <div>
+          <h3>Permutations</h3>
+          {permutations.length ? (
+            <ul>
+              {permutations.map((perm, i) => (
+                <li key={i}>
+                  {perm.ids
+                    .map(id => ingredients.find(ing => ing.id === id)?.name)
+                    .join(' + ')}
+                  {` (`}
+                  {perm.effects
+                    .map(eid => effectMap[eid]?.name)
+                    .join(', ')}
+                  {`)`}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p>No permutations match the selection.</p>
           )}
         </div>
       </div>
