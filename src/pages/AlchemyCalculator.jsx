@@ -4,6 +4,8 @@ import ingredients from '../../assets/alchemy_ingredients.json'
 import effects from '../../assets/alchemy_effects.json'
 import ingredientEffectsRaw from '../../assets/alchemy_ingredient_effects.json'
 
+import style from '../style/alchemy.module.css'
+
 const ingredientEffectMap = ingredientEffectsRaw.reduce((acc, { ingredient_id, effect_id }) => {
   acc[ingredient_id] = acc[ingredient_id] || []
   acc[ingredient_id].push(effect_id)
@@ -134,18 +136,13 @@ export default function AlchemyCalculator() {
     <div>
       <h2>Alchemy Ingredients</h2>
       <div
-        style={{
-          display: 'flex',
-          gap: '2rem',
-          justifyContent: 'space-between',
-          alignItems: 'flex-start',
-        }}
+        className={style.container}
       >
-        <div style={{ flex: 1, maxHeight: '70vh', overflowY: 'auto' }}>
+        <div className={style.ingredients}>
           <h3>Ingredients</h3>
           <button onClick={() => clear(setSelectedIngredients)}>Clear</button>
           {ingredients.map(ing => (
-            <label key={ing.id} style={{ display: 'block' }}>
+            <label key={ing.id} className={style.ingredient}>
               <input
                 type="checkbox"
                 checked={selectedIngredients.includes(ing.id)}
@@ -155,7 +152,8 @@ export default function AlchemyCalculator() {
             </label>
           ))}
         </div>
-        <div style={{ flex: 1, maxHeight: '70vh', overflowY: 'auto' }}>
+
+        <div className={style.effects}>
           <h3>Effects</h3>
           <button onClick={() => clear(setSelectedEffects)}>Clear</button>
           {effects.map(eff => (
@@ -169,7 +167,8 @@ export default function AlchemyCalculator() {
             </label>
           ))}
         </div>
-        <div style={{ flex: 1, maxHeight: '70vh', overflowY: 'auto' }}>
+
+        {/* <div>
           <h3>Matches</h3>
           {matchingIngredients.length ? (
             <ul>
@@ -180,8 +179,9 @@ export default function AlchemyCalculator() {
           ) : (
             <p>No ingredients match the selection.</p>
           )}
-        </div>
-        <div style={{ flex: 1, maxHeight: '70vh', overflowY: 'auto' }}>
+        </div> */}
+
+        <div className={style.permutations}>
           <h3>Permutations</h3>
           {permutations.length ? (
             <table>
