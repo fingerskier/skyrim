@@ -18,6 +18,12 @@
   white-space: nowrap;
 }
 
+.actionRow {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .effects {
   max-height: 80vh;
   overflow-y: auto;
