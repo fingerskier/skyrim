@@ -123,7 +123,16 @@ export default function AlchemyCalculator() {
       >
         <div className={style.ingredients}>
           <h3>Ingredients</h3>
-          <button onClick={() => clear(setSelectedIngredients)}>Clear</button>
+          <div className={style.actionRow}>
+            <button onClick={() => clear(setSelectedIngredients)}>Clear</button>
+            <button
+              onClick={() =>
+                setSelectedIngredients(ingredients.map(ing => ing.id))
+              }
+            >
+              Select All
+            </button>
+          </div>
           {sortedIngredients.map(ing => (
             <label key={ing.id} className={style.ingredient}>
               <input
