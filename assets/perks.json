@@ -1,0 +1,2780 @@
+[
+  {
+    "id": "archery.overdraw",
+    "skill": "archery",
+    "name": "Overdraw",
+    "ranks": [
+      {
+        "skillReq": 0,
+        "desc": "Bows do 20% more damage."
+      },
+      {
+        "skillReq": 20,
+        "desc": "Bows do 40% more damage."
+      },
+      {
+        "skillReq": 40,
+        "desc": "Bows do 60% more damage."
+      },
+      {
+        "skillReq": 60,
+        "desc": "Bows do 80% more damage."
+      },
+      {
+        "skillReq": 80,
+        "desc": "Bows do 100% more damage."
+      }
+    ],
+    "requires": []
+  },
+  {
+    "id": "archery.eagle_eye",
+    "skill": "archery",
+    "name": "Eagle Eye",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Pressing Block while aiming will zoom in your view."
+      }
+    ],
+    "requires": [
+      "archery.overdraw"
+    ]
+  },
+  {
+    "id": "archery.critical_shot",
+    "skill": "archery",
+    "name": "Critical Shot",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "10% chance of a critical hit that does extra damage."
+      },
+      {
+        "skillReq": 60,
+        "desc": "15% chance of a critical hit that does 25% more critical damage."
+      },
+      {
+        "skillReq": 90,
+        "desc": "20% chance of a critical hit that does 50% more critical damage."
+      }
+    ],
+    "requires": [
+      "archery.overdraw"
+    ]
+  },
+  {
+    "id": "archery.steady_hand",
+    "skill": "archery",
+    "name": "Steady Hand",
+    "ranks": [
+      {
+        "skillReq": 40,
+        "desc": "Zooming in with a bow slows time by 25%."
+      },
+      {
+        "skillReq": 60,
+        "desc": "Zooming in with a bow slows time by 50%."
+      }
+    ],
+    "requires": [
+      "archery.eagle_eye"
+    ]
+  },
+  {
+    "id": "archery.power_shot",
+    "skill": "archery",
+    "name": "Power Shot",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Arrows stagger all but the largest opponents 50% of the time."
+      }
+    ],
+    "requires": [
+      "archery.eagle_eye"
+    ]
+  },
+  {
+    "id": "archery.hunters_discipline",
+    "skill": "archery",
+    "name": "Hunter's Discipline",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Recover twice as many arrows from dead bodies."
+      }
+    ],
+    "requires": [
+      "archery.critical_shot"
+    ]
+  },
+  {
+    "id": "archery.ranger",
+    "skill": "archery",
+    "name": "Ranger",
+    "ranks": [
+      {
+        "skillReq": 60,
+        "desc": "Able to move faster with a drawn bow."
+      }
+    ],
+    "requires": [
+      "archery.hunters_discipline"
+    ]
+  },
+  {
+    "id": "archery.quick_shot",
+    "skill": "archery",
+    "name": "Quick Shot",
+    "ranks": [
+      {
+        "skillReq": 70,
+        "desc": "Can draw a bow 30% faster."
+      }
+    ],
+    "requires": [
+      "archery.power_shot"
+    ]
+  },
+  {
+    "id": "archery.bullseye",
+    "skill": "archery",
+    "name": "Bullseye",
+    "ranks": [
+      {
+        "skillReq": 100,
+        "desc": "15% chance of paralyzing the target for a few seconds."
+      }
+    ],
+    "requires": [
+      "archery.quick_shot",
+      "archery.ranger"
+    ]
+  },
+  {
+    "id": "block.shield_wall",
+    "skill": "block",
+    "name": "Shield Wall",
+    "ranks": [
+      {
+        "skillReq": 0,
+        "desc": "Blocking is 20% more effective."
+      },
+      {
+        "skillReq": 20,
+        "desc": "Blocking is 25% more effective."
+      },
+      {
+        "skillReq": 40,
+        "desc": "Blocking is 30% more effective."
+      },
+      {
+        "skillReq": 60,
+        "desc": "Blocking is 35% more effective."
+      },
+      {
+        "skillReq": 80,
+        "desc": "Blocking is 40% more effective."
+      }
+    ],
+    "requires": []
+  },
+  {
+    "id": "block.quick_reflexes",
+    "skill": "block",
+    "name": "Quick Reflexes",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Time slows down if you are blocking during an enemy power attack."
+      }
+    ],
+    "requires": [
+      "block.shield_wall"
+    ]
+  },
+  {
+    "id": "block.deflect_arrows",
+    "skill": "block",
+    "name": "Deflect Arrows",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Arrows that hit the shield do no damage."
+      }
+    ],
+    "requires": [
+      "block.shield_wall"
+    ]
+  },
+  {
+    "id": "block.power_bash",
+    "skill": "block",
+    "name": "Power Bash",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Able to do a power bash."
+      }
+    ],
+    "requires": [
+      "block.shield_wall"
+    ]
+  },
+  {
+    "id": "block.elemental_protection",
+    "skill": "block",
+    "name": "Elemental Protection",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Blocking with a shield reduces incoming fire, frost and shock damage by 50%."
+      }
+    ],
+    "requires": [
+      "block.deflect_arrows"
+    ]
+  },
+  {
+    "id": "block.deadly_bash",
+    "skill": "block",
+    "name": "Deadly Bash",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Bashing does five times more damage."
+      }
+    ],
+    "requires": [
+      "block.power_bash"
+    ]
+  },
+  {
+    "id": "block.block_runner",
+    "skill": "block",
+    "name": "Block Runner",
+    "ranks": [
+      {
+        "skillReq": 70,
+        "desc": "Able to move faster with a shield raised."
+      }
+    ],
+    "requires": [
+      "block.elemental_protection"
+    ]
+  },
+  {
+    "id": "block.disarming_bash",
+    "skill": "block",
+    "name": "Disarming Bash",
+    "ranks": [
+      {
+        "skillReq": 70,
+        "desc": "Chance to disarm when power bashing."
+      }
+    ],
+    "requires": [
+      "block.deadly_bash"
+    ]
+  },
+  {
+    "id": "block.shield_charge",
+    "skill": "block",
+    "name": "Shield Charge",
+    "ranks": [
+      {
+        "skillReq": 100,
+        "desc": "Sprinting with a shield raised knocks down most targets."
+      }
+    ],
+    "requires": [
+      "block.block_runner",
+      "block.disarming_bash"
+    ]
+  },
+  {
+    "id": "heavy_armor.juggernaut",
+    "skill": "heavy_armor",
+    "name": "Juggernaut",
+    "ranks": [
+      {
+        "skillReq": 0,
+        "desc": "Increases armor rating for Heavy Armor by 20%."
+      },
+      {
+        "skillReq": 20,
+        "desc": "Increases armor rating for Heavy Armor by 40%."
+      },
+      {
+        "skillReq": 40,
+        "desc": "Increases armor rating for Heavy Armor by 60%."
+      },
+      {
+        "skillReq": 60,
+        "desc": "Increases armor rating for Heavy Armor by 80%."
+      },
+      {
+        "skillReq": 80,
+        "desc": "Increases armor rating for Heavy Armor by 100%."
+      }
+    ],
+    "requires": []
+  },
+  {
+    "id": "heavy_armor.fists_of_steel",
+    "skill": "heavy_armor",
+    "name": "Fists of Steel",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Unarmed attacks with Heavy Armor gauntlets do their armor rating in extra damage."
+      }
+    ],
+    "requires": [
+      "heavy_armor.juggernaut"
+    ]
+  },
+  {
+    "id": "heavy_armor.well_fitted",
+    "skill": "heavy_armor",
+    "name": "Well Fitted",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "25% armor bonus if wearing all Heavy Armor: head, chest, hands, feet."
+      }
+    ],
+    "requires": [
+      "heavy_armor.juggernaut"
+    ]
+  },
+  {
+    "id": "heavy_armor.cushioned",
+    "skill": "heavy_armor",
+    "name": "Cushioned",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Half damage from falling if wearing all Heavy Armor."
+      }
+    ],
+    "requires": [
+      "heavy_armor.fists_of_steel"
+    ]
+  },
+  {
+    "id": "heavy_armor.tower_of_strength",
+    "skill": "heavy_armor",
+    "name": "Tower of Strength",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "50% less stagger when wearing only Heavy Armor."
+      }
+    ],
+    "requires": [
+      "heavy_armor.well_fitted"
+    ]
+  },
+  {
+    "id": "heavy_armor.conditioning",
+    "skill": "heavy_armor",
+    "name": "Conditioning",
+    "ranks": [
+      {
+        "skillReq": 70,
+        "desc": "Heavy Armor weighs nothing and does not slow you down when worn."
+      }
+    ],
+    "requires": [
+      "heavy_armor.cushioned"
+    ]
+  },
+  {
+    "id": "heavy_armor.matching_set",
+    "skill": "heavy_armor",
+    "name": "Matching Set",
+    "ranks": [
+      {
+        "skillReq": 70,
+        "desc": "Additional 25% armor bonus if wearing a matched set of Heavy Armor."
+      }
+    ],
+    "requires": [
+      "heavy_armor.tower_of_strength"
+    ]
+  },
+  {
+    "id": "heavy_armor.reflect_blows",
+    "skill": "heavy_armor",
+    "name": "Reflect Blows",
+    "ranks": [
+      {
+        "skillReq": 100,
+        "desc": "10% chance to reflect melee damage back to the enemy while wearing all Heavy Armor."
+      }
+    ],
+    "requires": [
+      "heavy_armor.matching_set"
+    ]
+  },
+  {
+    "id": "one_handed.armsman",
+    "skill": "one_handed",
+    "name": "Armsman",
+    "ranks": [
+      {
+        "skillReq": 0,
+        "desc": "One-handed weapons do 20% more damage."
+      },
+      {
+        "skillReq": 20,
+        "desc": "One-handed weapons do 40% more damage."
+      },
+      {
+        "skillReq": 40,
+        "desc": "One-handed weapons do 60% more damage."
+      },
+      {
+        "skillReq": 60,
+        "desc": "One-handed weapons do 80% more damage."
+      },
+      {
+        "skillReq": 80,
+        "desc": "One-handed weapons do 100% more damage."
+      }
+    ],
+    "requires": []
+  },
+  {
+    "id": "one_handed.fighting_stance",
+    "skill": "one_handed",
+    "name": "Fighting Stance",
+    "ranks": [
+      {
+        "skillReq": 20,
+        "desc": "Power attacks with one-handed weapons cost 25% less stamina."
+      }
+    ],
+    "requires": [
+      "one_handed.armsman"
+    ]
+  },
+  {
+    "id": "one_handed.bladesman",
+    "skill": "one_handed",
+    "name": "Bladesman",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Attacks with swords have a 10% chance of doing critical damage."
+      },
+      {
+        "skillReq": 60,
+        "desc": "Attacks with swords have a 15% chance of doing critical damage."
+      },
+      {
+        "skillReq": 90,
+        "desc": "Attacks with swords have a 20% chance of doing critical damage."
+      }
+    ],
+    "requires": [
+      "one_handed.armsman"
+    ]
+  },
+  {
+    "id": "one_handed.bone_breaker",
+    "skill": "one_handed",
+    "name": "Bone Breaker",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Attacks with maces ignore 25% of armor."
+      },
+      {
+        "skillReq": 60,
+        "desc": "Attacks with maces ignore 50% of armor."
+      },
+      {
+        "skillReq": 90,
+        "desc": "Attacks with maces ignore 75% of armor."
+      }
+    ],
+    "requires": [
+      "one_handed.armsman"
+    ]
+  },
+  {
+    "id": "one_handed.hack_and_slash",
+    "skill": "one_handed",
+    "name": "Hack and Slash",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Attacks with war axes cause extra bleeding damage."
+      },
+      {
+        "skillReq": 60,
+        "desc": "Attacks with war axes cause more bleeding damage."
+      },
+      {
+        "skillReq": 90,
+        "desc": "Attacks with war axes cause even more bleeding damage."
+      }
+    ],
+    "requires": [
+      "one_handed.armsman"
+    ]
+  },
+  {
+    "id": "one_handed.dual_flurry",
+    "skill": "one_handed",
+    "name": "Dual Flurry",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Dual wielding attacks are 20% faster."
+      },
+      {
+        "skillReq": 50,
+        "desc": "Dual wielding attacks are 35% faster."
+      }
+    ],
+    "requires": [
+      "one_handed.armsman"
+    ]
+  },
+  {
+    "id": "one_handed.savage_strike",
+    "skill": "one_handed",
+    "name": "Savage Strike",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Standing power attacks do 25% bonus damage with a chance to decapitate your enemies."
+      }
+    ],
+    "requires": [
+      "one_handed.fighting_stance"
+    ]
+  },
+  {
+    "id": "one_handed.critical_charge",
+    "skill": "one_handed",
+    "name": "Critical Charge",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Can do a one-handed power attack while sprinting that does double critical damage."
+      }
+    ],
+    "requires": [
+      "one_handed.fighting_stance"
+    ]
+  },
+  {
+    "id": "one_handed.dual_savagery",
+    "skill": "one_handed",
+    "name": "Dual Savagery",
+    "ranks": [
+      {
+        "skillReq": 70,
+        "desc": "Dual wielding power attacks do 50% bonus damage."
+      }
+    ],
+    "requires": [
+      "one_handed.dual_flurry"
+    ]
+  },
+  {
+    "id": "one_handed.paralyzing_strike",
+    "skill": "one_handed",
+    "name": "Paralyzing Strike",
+    "ranks": [
+      {
+        "skillReq": 100,
+        "desc": "Backwards power attack has a 25% chance to paralyze the target."
+      }
+    ],
+    "requires": [
+      "one_handed.savage_strike",
+      "one_handed.critical_charge"
+    ]
+  },
+  {
+    "id": "smithing.steel_smithing",
+    "skill": "smithing",
+    "name": "Steel Smithing",
+    "ranks": [
+      {
+        "skillReq": 0,
+        "desc": "Can create Steel armor and weapons at forges, and improve them twice as much."
+      }
+    ],
+    "requires": []
+  },
+  {
+    "id": "smithing.elven_smithing",
+    "skill": "smithing",
+    "name": "Elven Smithing",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Can create Elven armor and weapons at forges, and improve them twice as much."
+      }
+    ],
+    "requires": [
+      "smithing.steel_smithing"
+    ]
+  },
+  {
+    "id": "smithing.dwarven_smithing",
+    "skill": "smithing",
+    "name": "Dwarven Smithing",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Can create Dwarven armor and weapons at forges, and improve them twice as much."
+      }
+    ],
+    "requires": [
+      "smithing.steel_smithing"
+    ]
+  },
+  {
+    "id": "smithing.arcane_blacksmith",
+    "skill": "smithing",
+    "name": "Arcane Blacksmith",
+    "ranks": [
+      {
+        "skillReq": 60,
+        "desc": "You can improve magical weapons and armor."
+      }
+    ],
+    "requires": [
+      "smithing.steel_smithing"
+    ]
+  },
+  {
+    "id": "smithing.advanced_armors",
+    "skill": "smithing",
+    "name": "Advanced Armors",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Can create Scaled and Steel Plate armor at forges, and improve them twice as much."
+      }
+    ],
+    "requires": [
+      "smithing.elven_smithing"
+    ]
+  },
+  {
+    "id": "smithing.orcish_smithing",
+    "skill": "smithing",
+    "name": "Orcish Smithing",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Can create Orcish armor and weapons at forges, and improve them twice as much."
+      }
+    ],
+    "requires": [
+      "smithing.dwarven_smithing"
+    ]
+  },
+  {
+    "id": "smithing.glass_smithing",
+    "skill": "smithing",
+    "name": "Glass Smithing",
+    "ranks": [
+      {
+        "skillReq": 70,
+        "desc": "Can create Glass armor and weapons at forges, and improve them twice as much."
+      }
+    ],
+    "requires": [
+      "smithing.advanced_armors"
+    ]
+  },
+  {
+    "id": "smithing.ebony_smithing",
+    "skill": "smithing",
+    "name": "Ebony Smithing",
+    "ranks": [
+      {
+        "skillReq": 80,
+        "desc": "Can create Ebony armor and weapons at forges, and improve them twice as much."
+      }
+    ],
+    "requires": [
+      "smithing.orcish_smithing"
+    ]
+  },
+  {
+    "id": "smithing.daedric_smithing",
+    "skill": "smithing",
+    "name": "Daedric Smithing",
+    "ranks": [
+      {
+        "skillReq": 90,
+        "desc": "Can create Daedric armor and weapons at forges, and improve them twice as much."
+      }
+    ],
+    "requires": [
+      "smithing.ebony_smithing"
+    ]
+  },
+  {
+    "id": "smithing.dragon_armor",
+    "skill": "smithing",
+    "name": "Dragon Armor",
+    "ranks": [
+      {
+        "skillReq": 100,
+        "desc": "Can create Dragon armor at forges, and improve it twice as much."
+      }
+    ],
+    "requires": [
+      "smithing.glass_smithing",
+      "smithing.daedric_smithing"
+    ]
+  },
+  {
+    "id": "two_handed.barbarian",
+    "skill": "two_handed",
+    "name": "Barbarian",
+    "ranks": [
+      {
+        "skillReq": 0,
+        "desc": "Two-handed weapons do 20% more damage."
+      },
+      {
+        "skillReq": 20,
+        "desc": "Two-handed weapons do 40% more damage."
+      },
+      {
+        "skillReq": 40,
+        "desc": "Two-handed weapons do 60% more damage."
+      },
+      {
+        "skillReq": 60,
+        "desc": "Two-handed weapons do 80% more damage."
+      },
+      {
+        "skillReq": 80,
+        "desc": "Two-handed weapons do 100% more damage."
+      }
+    ],
+    "requires": []
+  },
+  {
+    "id": "two_handed.champions_stance",
+    "skill": "two_handed",
+    "name": "Champion's Stance",
+    "ranks": [
+      {
+        "skillReq": 20,
+        "desc": "Power attacks with two-handed weapons cost 25% less stamina."
+      }
+    ],
+    "requires": [
+      "two_handed.barbarian"
+    ]
+  },
+  {
+    "id": "two_handed.limbsplitter",
+    "skill": "two_handed",
+    "name": "Limbsplitter",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Attacks with battle axes cause extra bleeding damage."
+      },
+      {
+        "skillReq": 60,
+        "desc": "Attacks with battle axes cause more bleeding damage."
+      },
+      {
+        "skillReq": 90,
+        "desc": "Attacks with battle axes cause even more bleeding damage."
+      }
+    ],
+    "requires": [
+      "two_handed.barbarian"
+    ]
+  },
+  {
+    "id": "two_handed.deep_wounds",
+    "skill": "two_handed",
+    "name": "Deep Wounds",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Attacks with greatswords have a 10% chance of doing critical damage."
+      },
+      {
+        "skillReq": 60,
+        "desc": "Attacks with greatswords have a 15% chance of doing critical damage."
+      },
+      {
+        "skillReq": 90,
+        "desc": "Attacks with greatswords have a 20% chance of doing critical damage."
+      }
+    ],
+    "requires": [
+      "two_handed.barbarian"
+    ]
+  },
+  {
+    "id": "two_handed.skull_crusher",
+    "skill": "two_handed",
+    "name": "Skull Crusher",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Attacks with warhammers ignore 25% of armor."
+      },
+      {
+        "skillReq": 60,
+        "desc": "Attacks with warhammers ignore 50% of armor."
+      },
+      {
+        "skillReq": 90,
+        "desc": "Attacks with warhammers ignore 75% of armor."
+      }
+    ],
+    "requires": [
+      "two_handed.barbarian"
+    ]
+  },
+  {
+    "id": "two_handed.devastating_blow",
+    "skill": "two_handed",
+    "name": "Devastating Blow",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Standing power attacks do 25% bonus damage with a chance to decapitate your enemies."
+      }
+    ],
+    "requires": [
+      "two_handed.champions_stance"
+    ]
+  },
+  {
+    "id": "two_handed.great_critical_charge",
+    "skill": "two_handed",
+    "name": "Great Critical Charge",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Can do a two-handed power attack while sprinting that does double critical damage."
+      }
+    ],
+    "requires": [
+      "two_handed.champions_stance"
+    ]
+  },
+  {
+    "id": "two_handed.sweep",
+    "skill": "two_handed",
+    "name": "Sweep",
+    "ranks": [
+      {
+        "skillReq": 70,
+        "desc": "Sideways power attacks with two-handed weapons hit all targets in front of you."
+      }
+    ],
+    "requires": [
+      "two_handed.devastating_blow",
+      "two_handed.great_critical_charge"
+    ]
+  },
+  {
+    "id": "two_handed.warmaster",
+    "skill": "two_handed",
+    "name": "Warmaster",
+    "ranks": [
+      {
+        "skillReq": 100,
+        "desc": "Backwards power attack has a 25% chance to paralyze the target."
+      }
+    ],
+    "requires": [
+      "two_handed.sweep"
+    ]
+  },
+  {
+    "id": "alteration.novice_alteration",
+    "skill": "alteration",
+    "name": "Novice Alteration",
+    "ranks": [
+      {
+        "skillReq": 0,
+        "desc": "Cast Novice level Alteration spells for half magicka."
+      }
+    ],
+    "requires": []
+  },
+  {
+    "id": "alteration.apprentice_alteration",
+    "skill": "alteration",
+    "name": "Apprentice Alteration",
+    "ranks": [
+      {
+        "skillReq": 25,
+        "desc": "Cast Apprentice level Alteration spells for half magicka."
+      }
+    ],
+    "requires": [
+      "alteration.novice_alteration"
+    ]
+  },
+  {
+    "id": "alteration.adept_alteration",
+    "skill": "alteration",
+    "name": "Adept Alteration",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Cast Adept level Alteration spells for half magicka."
+      }
+    ],
+    "requires": [
+      "alteration.apprentice_alteration"
+    ]
+  },
+  {
+    "id": "alteration.expert_alteration",
+    "skill": "alteration",
+    "name": "Expert Alteration",
+    "ranks": [
+      {
+        "skillReq": 75,
+        "desc": "Cast Expert level Alteration spells for half magicka."
+      }
+    ],
+    "requires": [
+      "alteration.adept_alteration"
+    ]
+  },
+  {
+    "id": "alteration.master_alteration",
+    "skill": "alteration",
+    "name": "Master Alteration",
+    "ranks": [
+      {
+        "skillReq": 100,
+        "desc": "Cast Master level Alteration spells for half magicka."
+      }
+    ],
+    "requires": [
+      "alteration.expert_alteration"
+    ]
+  },
+  {
+    "id": "alteration.alteration_dual_casting",
+    "skill": "alteration",
+    "name": "Alteration Dual Casting",
+    "ranks": [
+      {
+        "skillReq": 20,
+        "desc": "Dual casting an Alteration spell overcharges the effects into an even more powerful version."
+      }
+    ],
+    "requires": [
+      "alteration.novice_alteration"
+    ]
+  },
+  {
+    "id": "alteration.mage_armor",
+    "skill": "alteration",
+    "name": "Mage Armor",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Protection spells like Stoneflesh are twice as strong if not wearing armor."
+      },
+      {
+        "skillReq": 50,
+        "desc": "Protection spells are 2.5x as strong if not wearing armor."
+      },
+      {
+        "skillReq": 70,
+        "desc": "Protection spells are three times as strong if not wearing armor."
+      }
+    ],
+    "requires": [
+      "alteration.novice_alteration"
+    ]
+  },
+  {
+    "id": "alteration.magic_resistance",
+    "skill": "alteration",
+    "name": "Magic Resistance",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Blocks 10% of a spell's effects."
+      },
+      {
+        "skillReq": 50,
+        "desc": "Blocks 20% of a spell's effects."
+      },
+      {
+        "skillReq": 70,
+        "desc": "Blocks 30% of a spell's effects."
+      }
+    ],
+    "requires": [
+      "alteration.apprentice_alteration"
+    ]
+  },
+  {
+    "id": "alteration.stability",
+    "skill": "alteration",
+    "name": "Stability",
+    "ranks": [
+      {
+        "skillReq": 70,
+        "desc": "Alteration spells have greater duration."
+      }
+    ],
+    "requires": [
+      "alteration.adept_alteration"
+    ]
+  },
+  {
+    "id": "alteration.atronach",
+    "skill": "alteration",
+    "name": "Atronach",
+    "ranks": [
+      {
+        "skillReq": 100,
+        "desc": "Absorb 30% of the magicka of any spells that hit you."
+      }
+    ],
+    "requires": [
+      "alteration.magic_resistance"
+    ]
+  },
+  {
+    "id": "conjuration.novice_conjuration",
+    "skill": "conjuration",
+    "name": "Novice Conjuration",
+    "ranks": [
+      {
+        "skillReq": 0,
+        "desc": "Cast Novice level Conjuration spells for half magicka."
+      }
+    ],
+    "requires": []
+  },
+  {
+    "id": "conjuration.apprentice_conjuration",
+    "skill": "conjuration",
+    "name": "Apprentice Conjuration",
+    "ranks": [
+      {
+        "skillReq": 25,
+        "desc": "Cast Apprentice level Conjuration spells for half magicka."
+      }
+    ],
+    "requires": [
+      "conjuration.novice_conjuration"
+    ]
+  },
+  {
+    "id": "conjuration.adept_conjuration",
+    "skill": "conjuration",
+    "name": "Adept Conjuration",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Cast Adept level Conjuration spells for half magicka."
+      }
+    ],
+    "requires": [
+      "conjuration.apprentice_conjuration"
+    ]
+  },
+  {
+    "id": "conjuration.expert_conjuration",
+    "skill": "conjuration",
+    "name": "Expert Conjuration",
+    "ranks": [
+      {
+        "skillReq": 75,
+        "desc": "Cast Expert level Conjuration spells for half magicka."
+      }
+    ],
+    "requires": [
+      "conjuration.adept_conjuration"
+    ]
+  },
+  {
+    "id": "conjuration.master_conjuration",
+    "skill": "conjuration",
+    "name": "Master Conjuration",
+    "ranks": [
+      {
+        "skillReq": 100,
+        "desc": "Cast Master level Conjuration spells for half magicka."
+      }
+    ],
+    "requires": [
+      "conjuration.expert_conjuration"
+    ]
+  },
+  {
+    "id": "conjuration.conjuration_dual_casting",
+    "skill": "conjuration",
+    "name": "Conjuration Dual Casting",
+    "ranks": [
+      {
+        "skillReq": 20,
+        "desc": "Dual casting a Conjuration spell overcharges the effects into an even more powerful version."
+      }
+    ],
+    "requires": [
+      "conjuration.novice_conjuration"
+    ]
+  },
+  {
+    "id": "conjuration.mystic_binding",
+    "skill": "conjuration",
+    "name": "Mystic Binding",
+    "ranks": [
+      {
+        "skillReq": 20,
+        "desc": "Bound weapons do more damage."
+      }
+    ],
+    "requires": [
+      "conjuration.novice_conjuration"
+    ]
+  },
+  {
+    "id": "conjuration.summoner",
+    "skill": "conjuration",
+    "name": "Summoner",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Can summon atronachs or raise undead twice as far away."
+      },
+      {
+        "skillReq": 70,
+        "desc": "Can summon atronachs or raise undead three times as far away."
+      }
+    ],
+    "requires": [
+      "conjuration.novice_conjuration"
+    ]
+  },
+  {
+    "id": "conjuration.necromancy",
+    "skill": "conjuration",
+    "name": "Necromancy",
+    "ranks": [
+      {
+        "skillReq": 40,
+        "desc": "Greater duration for reanimated undead."
+      }
+    ],
+    "requires": [
+      "conjuration.novice_conjuration"
+    ]
+  },
+  {
+    "id": "conjuration.soul_stealer",
+    "skill": "conjuration",
+    "name": "Soul Stealer",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Bound weapons cast Soul Trap on targets."
+      }
+    ],
+    "requires": [
+      "conjuration.mystic_binding"
+    ]
+  },
+  {
+    "id": "conjuration.atromancy",
+    "skill": "conjuration",
+    "name": "Atromancy",
+    "ranks": [
+      {
+        "skillReq": 40,
+        "desc": "Double duration for conjured atronachs."
+      }
+    ],
+    "requires": [
+      "conjuration.summoner"
+    ]
+  },
+  {
+    "id": "conjuration.oblivion_binding",
+    "skill": "conjuration",
+    "name": "Oblivion Binding",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Bound weapons will banish summoned creatures and turn raised ones."
+      }
+    ],
+    "requires": [
+      "conjuration.soul_stealer"
+    ]
+  },
+  {
+    "id": "conjuration.dark_souls",
+    "skill": "conjuration",
+    "name": "Dark Souls",
+    "ranks": [
+      {
+        "skillReq": 70,
+        "desc": "Reanimated undead have 100 points more health."
+      }
+    ],
+    "requires": [
+      "conjuration.necromancy"
+    ]
+  },
+  {
+    "id": "conjuration.elemental_potency",
+    "skill": "conjuration",
+    "name": "Elemental Potency",
+    "ranks": [
+      {
+        "skillReq": 80,
+        "desc": "Conjured atronachs are 50% more powerful."
+      }
+    ],
+    "requires": [
+      "conjuration.atromancy"
+    ]
+  },
+  {
+    "id": "conjuration.twin_souls",
+    "skill": "conjuration",
+    "name": "Twin Souls",
+    "ranks": [
+      {
+        "skillReq": 100,
+        "desc": "You can have two atronachs or reanimated zombies."
+      }
+    ],
+    "requires": [
+      "conjuration.dark_souls",
+      "conjuration.elemental_potency"
+    ]
+  },
+  {
+    "id": "destruction.novice_destruction",
+    "skill": "destruction",
+    "name": "Novice Destruction",
+    "ranks": [
+      {
+        "skillReq": 0,
+        "desc": "Cast Novice level Destruction spells for half magicka."
+      }
+    ],
+    "requires": []
+  },
+  {
+    "id": "destruction.apprentice_destruction",
+    "skill": "destruction",
+    "name": "Apprentice Destruction",
+    "ranks": [
+      {
+        "skillReq": 25,
+        "desc": "Cast Apprentice level Destruction spells for half magicka."
+      }
+    ],
+    "requires": [
+      "destruction.novice_destruction"
+    ]
+  },
+  {
+    "id": "destruction.adept_destruction",
+    "skill": "destruction",
+    "name": "Adept Destruction",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Cast Adept level Destruction spells for half magicka."
+      }
+    ],
+    "requires": [
+      "destruction.apprentice_destruction"
+    ]
+  },
+  {
+    "id": "destruction.expert_destruction",
+    "skill": "destruction",
+    "name": "Expert Destruction",
+    "ranks": [
+      {
+        "skillReq": 75,
+        "desc": "Cast Expert level Destruction spells for half magicka."
+      }
+    ],
+    "requires": [
+      "destruction.adept_destruction"
+    ]
+  },
+  {
+    "id": "destruction.master_destruction",
+    "skill": "destruction",
+    "name": "Master Destruction",
+    "ranks": [
+      {
+        "skillReq": 100,
+        "desc": "Cast Master level Destruction spells for half magicka."
+      }
+    ],
+    "requires": [
+      "destruction.expert_destruction"
+    ]
+  },
+  {
+    "id": "destruction.destruction_dual_casting",
+    "skill": "destruction",
+    "name": "Destruction Dual Casting",
+    "ranks": [
+      {
+        "skillReq": 20,
+        "desc": "Dual casting a Destruction spell overcharges the effects into an even more powerful version."
+      }
+    ],
+    "requires": [
+      "destruction.novice_destruction"
+    ]
+  },
+  {
+    "id": "destruction.augmented_flames",
+    "skill": "destruction",
+    "name": "Augmented Flames",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Fire spells do 25% more damage."
+      },
+      {
+        "skillReq": 60,
+        "desc": "Fire spells do 50% more damage."
+      }
+    ],
+    "requires": [
+      "destruction.novice_destruction"
+    ]
+  },
+  {
+    "id": "destruction.augmented_frost",
+    "skill": "destruction",
+    "name": "Augmented Frost",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Frost spells do 25% more damage."
+      },
+      {
+        "skillReq": 60,
+        "desc": "Frost spells do 50% more damage."
+      }
+    ],
+    "requires": [
+      "destruction.novice_destruction"
+    ]
+  },
+  {
+    "id": "destruction.augmented_shock",
+    "skill": "destruction",
+    "name": "Augmented Shock",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Shock spells do 25% more damage."
+      },
+      {
+        "skillReq": 60,
+        "desc": "Shock spells do 50% more damage."
+      }
+    ],
+    "requires": [
+      "destruction.novice_destruction"
+    ]
+  },
+  {
+    "id": "destruction.impact",
+    "skill": "destruction",
+    "name": "Impact",
+    "ranks": [
+      {
+        "skillReq": 40,
+        "desc": "Most destruction spells will stagger an opponent when dual cast."
+      }
+    ],
+    "requires": [
+      "destruction.destruction_dual_casting"
+    ]
+  },
+  {
+    "id": "destruction.rune_master",
+    "skill": "destruction",
+    "name": "Rune Master",
+    "ranks": [
+      {
+        "skillReq": 40,
+        "desc": "Can place runes five times farther away."
+      }
+    ],
+    "requires": [
+      "destruction.apprentice_destruction"
+    ]
+  },
+  {
+    "id": "destruction.intense_flames",
+    "skill": "destruction",
+    "name": "Intense Flames",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Fire damage causes targets to flee if their health is low."
+      }
+    ],
+    "requires": [
+      "destruction.augmented_flames"
+    ]
+  },
+  {
+    "id": "destruction.deep_freeze",
+    "skill": "destruction",
+    "name": "Deep Freeze",
+    "ranks": [
+      {
+        "skillReq": 60,
+        "desc": "Frost damage paralyzes targets if their health is low."
+      }
+    ],
+    "requires": [
+      "destruction.augmented_frost"
+    ]
+  },
+  {
+    "id": "destruction.disintegrate",
+    "skill": "destruction",
+    "name": "Disintegrate",
+    "ranks": [
+      {
+        "skillReq": 70,
+        "desc": "Shock damage disintegrates targets if their health is low."
+      }
+    ],
+    "requires": [
+      "destruction.augmented_shock"
+    ]
+  },
+  {
+    "id": "enchanting.enchanter",
+    "skill": "enchanting",
+    "name": "Enchanter",
+    "ranks": [
+      {
+        "skillReq": 0,
+        "desc": "New enchantments are 20% stronger."
+      },
+      {
+        "skillReq": 20,
+        "desc": "New enchantments are 40% stronger."
+      },
+      {
+        "skillReq": 40,
+        "desc": "New enchantments are 60% stronger."
+      },
+      {
+        "skillReq": 60,
+        "desc": "New enchantments are 80% stronger."
+      },
+      {
+        "skillReq": 80,
+        "desc": "New enchantments are 100% stronger."
+      }
+    ],
+    "requires": []
+  },
+  {
+    "id": "enchanting.soul_squeezer",
+    "skill": "enchanting",
+    "name": "Soul Squeezer",
+    "ranks": [
+      {
+        "skillReq": 20,
+        "desc": "Soul gems provide extra magicka for recharging."
+      }
+    ],
+    "requires": [
+      "enchanting.enchanter"
+    ]
+  },
+  {
+    "id": "enchanting.fire_enchanter",
+    "skill": "enchanting",
+    "name": "Fire Enchanter",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Fire enchantments on weapons and armor are 25% stronger."
+      }
+    ],
+    "requires": [
+      "enchanting.enchanter"
+    ]
+  },
+  {
+    "id": "enchanting.insightful_enchanter",
+    "skill": "enchanting",
+    "name": "Insightful Enchanter",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Skill enchantments on armor are 25% stronger."
+      }
+    ],
+    "requires": [
+      "enchanting.enchanter"
+    ]
+  },
+  {
+    "id": "enchanting.soul_siphon",
+    "skill": "enchanting",
+    "name": "Soul Siphon",
+    "ranks": [
+      {
+        "skillReq": 40,
+        "desc": "Death blows to creatures, but not people, trap 5% of the victim's soul, recharging the weapon."
+      }
+    ],
+    "requires": [
+      "enchanting.soul_squeezer"
+    ]
+  },
+  {
+    "id": "enchanting.frost_enchanter",
+    "skill": "enchanting",
+    "name": "Frost Enchanter",
+    "ranks": [
+      {
+        "skillReq": 40,
+        "desc": "Frost enchantments on weapons and armor are 25% stronger."
+      }
+    ],
+    "requires": [
+      "enchanting.fire_enchanter"
+    ]
+  },
+  {
+    "id": "enchanting.storm_enchanter",
+    "skill": "enchanting",
+    "name": "Storm Enchanter",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Shock enchantments on weapons and armor are 25% stronger."
+      }
+    ],
+    "requires": [
+      "enchanting.frost_enchanter"
+    ]
+  },
+  {
+    "id": "enchanting.corpus_enchanter",
+    "skill": "enchanting",
+    "name": "Corpus Enchanter",
+    "ranks": [
+      {
+        "skillReq": 70,
+        "desc": "Health, magicka, and stamina enchantments on armor are 25% stronger."
+      }
+    ],
+    "requires": [
+      "enchanting.insightful_enchanter"
+    ]
+  },
+  {
+    "id": "enchanting.extra_effect",
+    "skill": "enchanting",
+    "name": "Extra Effect",
+    "ranks": [
+      {
+        "skillReq": 100,
+        "desc": "Can put two enchantments on the same item."
+      }
+    ],
+    "requires": [
+      "enchanting.storm_enchanter",
+      "enchanting.corpus_enchanter"
+    ]
+  },
+  {
+    "id": "illusion.novice_illusion",
+    "skill": "illusion",
+    "name": "Novice Illusion",
+    "ranks": [
+      {
+        "skillReq": 0,
+        "desc": "Cast Novice level Illusion spells for half magicka."
+      }
+    ],
+    "requires": []
+  },
+  {
+    "id": "illusion.apprentice_illusion",
+    "skill": "illusion",
+    "name": "Apprentice Illusion",
+    "ranks": [
+      {
+        "skillReq": 25,
+        "desc": "Cast Apprentice level Illusion spells for half magicka."
+      }
+    ],
+    "requires": [
+      "illusion.novice_illusion"
+    ]
+  },
+  {
+    "id": "illusion.adept_illusion",
+    "skill": "illusion",
+    "name": "Adept Illusion",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Cast Adept level Illusion spells for half magicka."
+      }
+    ],
+    "requires": [
+      "illusion.apprentice_illusion"
+    ]
+  },
+  {
+    "id": "illusion.expert_illusion",
+    "skill": "illusion",
+    "name": "Expert Illusion",
+    "ranks": [
+      {
+        "skillReq": 75,
+        "desc": "Cast Expert level Illusion spells for half magicka."
+      }
+    ],
+    "requires": [
+      "illusion.adept_illusion"
+    ]
+  },
+  {
+    "id": "illusion.master_illusion",
+    "skill": "illusion",
+    "name": "Master Illusion",
+    "ranks": [
+      {
+        "skillReq": 100,
+        "desc": "Cast Master level Illusion spells for half magicka."
+      }
+    ],
+    "requires": [
+      "illusion.expert_illusion"
+    ]
+  },
+  {
+    "id": "illusion.illusion_dual_casting",
+    "skill": "illusion",
+    "name": "Illusion Dual Casting",
+    "ranks": [
+      {
+        "skillReq": 20,
+        "desc": "Dual casting an Illusion spell overcharges the effects into an even more powerful version."
+      }
+    ],
+    "requires": [
+      "illusion.novice_illusion"
+    ]
+  },
+  {
+    "id": "illusion.animage",
+    "skill": "illusion",
+    "name": "Animage",
+    "ranks": [
+      {
+        "skillReq": 20,
+        "desc": "Illusion spells work on higher level animals."
+      }
+    ],
+    "requires": [
+      "illusion.novice_illusion"
+    ]
+  },
+  {
+    "id": "illusion.hypnotic_gaze",
+    "skill": "illusion",
+    "name": "Hypnotic Gaze",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Calm spells now work on higher level opponents."
+      }
+    ],
+    "requires": [
+      "illusion.novice_illusion"
+    ]
+  },
+  {
+    "id": "illusion.kindred_mage",
+    "skill": "illusion",
+    "name": "Kindred Mage",
+    "ranks": [
+      {
+        "skillReq": 40,
+        "desc": "All Illusion spells work on higher level people."
+      }
+    ],
+    "requires": [
+      "illusion.animage"
+    ]
+  },
+  {
+    "id": "illusion.aspect_of_terror",
+    "skill": "illusion",
+    "name": "Aspect of Terror",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Fear spells work on higher level opponents."
+      }
+    ],
+    "requires": [
+      "illusion.hypnotic_gaze"
+    ]
+  },
+  {
+    "id": "illusion.quiet_casting",
+    "skill": "illusion",
+    "name": "Quiet Casting",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "All spells you cast from any school of magic are silent to others."
+      }
+    ],
+    "requires": [
+      "illusion.kindred_mage"
+    ]
+  },
+  {
+    "id": "illusion.rage",
+    "skill": "illusion",
+    "name": "Rage",
+    "ranks": [
+      {
+        "skillReq": 70,
+        "desc": "Frenzy spells work on higher level opponents."
+      }
+    ],
+    "requires": [
+      "illusion.aspect_of_terror"
+    ]
+  },
+  {
+    "id": "illusion.master_of_the_mind",
+    "skill": "illusion",
+    "name": "Master of the Mind",
+    "ranks": [
+      {
+        "skillReq": 90,
+        "desc": "Illusion spells work on undead, daedra and automatons."
+      }
+    ],
+    "requires": [
+      "illusion.quiet_casting",
+      "illusion.rage"
+    ]
+  },
+  {
+    "id": "restoration.novice_restoration",
+    "skill": "restoration",
+    "name": "Novice Restoration",
+    "ranks": [
+      {
+        "skillReq": 0,
+        "desc": "Cast Novice level Restoration spells for half magicka."
+      }
+    ],
+    "requires": []
+  },
+  {
+    "id": "restoration.apprentice_restoration",
+    "skill": "restoration",
+    "name": "Apprentice Restoration",
+    "ranks": [
+      {
+        "skillReq": 25,
+        "desc": "Cast Apprentice level Restoration spells for half magicka."
+      }
+    ],
+    "requires": [
+      "restoration.novice_restoration"
+    ]
+  },
+  {
+    "id": "restoration.adept_restoration",
+    "skill": "restoration",
+    "name": "Adept Restoration",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Cast Adept level Restoration spells for half magicka."
+      }
+    ],
+    "requires": [
+      "restoration.apprentice_restoration"
+    ]
+  },
+  {
+    "id": "restoration.expert_restoration",
+    "skill": "restoration",
+    "name": "Expert Restoration",
+    "ranks": [
+      {
+        "skillReq": 75,
+        "desc": "Cast Expert level Restoration spells for half magicka."
+      }
+    ],
+    "requires": [
+      "restoration.adept_restoration"
+    ]
+  },
+  {
+    "id": "restoration.master_restoration",
+    "skill": "restoration",
+    "name": "Master Restoration",
+    "ranks": [
+      {
+        "skillReq": 100,
+        "desc": "Cast Master level Restoration spells for half magicka."
+      }
+    ],
+    "requires": [
+      "restoration.expert_restoration"
+    ]
+  },
+  {
+    "id": "restoration.restoration_dual_casting",
+    "skill": "restoration",
+    "name": "Restoration Dual Casting",
+    "ranks": [
+      {
+        "skillReq": 20,
+        "desc": "Dual casting a Restoration spell overcharges the effects into an even more powerful version."
+      }
+    ],
+    "requires": [
+      "restoration.novice_restoration"
+    ]
+  },
+  {
+    "id": "restoration.regeneration",
+    "skill": "restoration",
+    "name": "Regeneration",
+    "ranks": [
+      {
+        "skillReq": 20,
+        "desc": "Healing spells cure 50% more."
+      }
+    ],
+    "requires": [
+      "restoration.novice_restoration"
+    ]
+  },
+  {
+    "id": "restoration.respite",
+    "skill": "restoration",
+    "name": "Respite",
+    "ranks": [
+      {
+        "skillReq": 40,
+        "desc": "Healing spells also restore stamina."
+      }
+    ],
+    "requires": [
+      "restoration.novice_restoration"
+    ]
+  },
+  {
+    "id": "restoration.recovery",
+    "skill": "restoration",
+    "name": "Recovery",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Magicka regenerates 25% faster."
+      },
+      {
+        "skillReq": 60,
+        "desc": "Magicka regenerates 50% faster."
+      }
+    ],
+    "requires": [
+      "restoration.regeneration"
+    ]
+  },
+  {
+    "id": "restoration.necromage",
+    "skill": "restoration",
+    "name": "Necromage",
+    "ranks": [
+      {
+        "skillReq": 70,
+        "desc": "All spells are more effective against undead."
+      }
+    ],
+    "requires": [
+      "restoration.regeneration"
+    ]
+  },
+  {
+    "id": "restoration.ward_absorb",
+    "skill": "restoration",
+    "name": "Ward Absorb",
+    "ranks": [
+      {
+        "skillReq": 60,
+        "desc": "Wards recharge your magicka when hit with spells."
+      }
+    ],
+    "requires": [
+      "restoration.respite"
+    ]
+  },
+  {
+    "id": "restoration.avoid_death",
+    "skill": "restoration",
+    "name": "Avoid Death",
+    "ranks": [
+      {
+        "skillReq": 90,
+        "desc": "Once a day, heals 250 points automatically if you fall below 10% health."
+      }
+    ],
+    "requires": [
+      "restoration.recovery"
+    ]
+  },
+  {
+    "id": "alchemy.alchemist",
+    "skill": "alchemy",
+    "name": "Alchemist",
+    "ranks": [
+      {
+        "skillReq": 0,
+        "desc": "Potions and poisons you make are 20% stronger."
+      },
+      {
+        "skillReq": 20,
+        "desc": "Potions and poisons you make are 40% stronger."
+      },
+      {
+        "skillReq": 40,
+        "desc": "Potions and poisons you make are 60% stronger."
+      },
+      {
+        "skillReq": 60,
+        "desc": "Potions and poisons you make are 80% stronger."
+      },
+      {
+        "skillReq": 80,
+        "desc": "Potions and poisons you make are 100% stronger."
+      }
+    ],
+    "requires": []
+  },
+  {
+    "id": "alchemy.physician",
+    "skill": "alchemy",
+    "name": "Physician",
+    "ranks": [
+      {
+        "skillReq": 20,
+        "desc": "Potions you mix that restore Health, Magicka or Stamina are 25% more powerful."
+      }
+    ],
+    "requires": [
+      "alchemy.alchemist"
+    ]
+  },
+  {
+    "id": "alchemy.benefactor",
+    "skill": "alchemy",
+    "name": "Benefactor",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Potions you mix with beneficial effects have an additional 25% greater magnitude."
+      }
+    ],
+    "requires": [
+      "alchemy.physician"
+    ]
+  },
+  {
+    "id": "alchemy.poisoner",
+    "skill": "alchemy",
+    "name": "Poisoner",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Poisons you mix are 25% more effective."
+      }
+    ],
+    "requires": [
+      "alchemy.physician"
+    ]
+  },
+  {
+    "id": "alchemy.experimenter",
+    "skill": "alchemy",
+    "name": "Experimenter",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Eating an ingredient reveals first two effects."
+      },
+      {
+        "skillReq": 70,
+        "desc": "Eating an ingredient reveals first three effects."
+      },
+      {
+        "skillReq": 90,
+        "desc": "Eating an ingredient reveals all its effects."
+      }
+    ],
+    "requires": [
+      "alchemy.benefactor"
+    ]
+  },
+  {
+    "id": "alchemy.concentrated_poison",
+    "skill": "alchemy",
+    "name": "Concentrated Poison",
+    "ranks": [
+      {
+        "skillReq": 60,
+        "desc": "Poisons applied to weapons last for twice as many hits."
+      }
+    ],
+    "requires": [
+      "alchemy.poisoner"
+    ]
+  },
+  {
+    "id": "alchemy.green_thumb",
+    "skill": "alchemy",
+    "name": "Green Thumb",
+    "ranks": [
+      {
+        "skillReq": 70,
+        "desc": "Two ingredients are gathered from plants."
+      }
+    ],
+    "requires": [
+      "alchemy.concentrated_poison"
+    ]
+  },
+  {
+    "id": "alchemy.snakeblood",
+    "skill": "alchemy",
+    "name": "Snakeblood",
+    "ranks": [
+      {
+        "skillReq": 80,
+        "desc": "50% resistance to all poisons."
+      }
+    ],
+    "requires": [
+      "alchemy.experimenter",
+      "alchemy.concentrated_poison"
+    ]
+  },
+  {
+    "id": "alchemy.purity",
+    "skill": "alchemy",
+    "name": "Purity",
+    "ranks": [
+      {
+        "skillReq": 100,
+        "desc": "All negative effects are removed from created potions, and all positive effects are removed from created poisons."
+      }
+    ],
+    "requires": [
+      "alchemy.snakeblood"
+    ]
+  },
+  {
+    "id": "light_armor.agile_defender",
+    "skill": "light_armor",
+    "name": "Agile Defender",
+    "ranks": [
+      {
+        "skillReq": 0,
+        "desc": "Increases armor rating for Light Armor by 20%."
+      },
+      {
+        "skillReq": 20,
+        "desc": "Increases armor rating for Light Armor by 40%."
+      },
+      {
+        "skillReq": 40,
+        "desc": "Increases armor rating for Light Armor by 60%."
+      },
+      {
+        "skillReq": 60,
+        "desc": "Increases armor rating for Light Armor by 80%."
+      },
+      {
+        "skillReq": 80,
+        "desc": "Increases armor rating for Light Armor by 100%."
+      }
+    ],
+    "requires": []
+  },
+  {
+    "id": "light_armor.custom_fit",
+    "skill": "light_armor",
+    "name": "Custom Fit",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "25% armor bonus if wearing all Light Armor: head, chest, hands, feet."
+      }
+    ],
+    "requires": [
+      "light_armor.agile_defender"
+    ]
+  },
+  {
+    "id": "light_armor.unhindered",
+    "skill": "light_armor",
+    "name": "Unhindered",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Light Armor weighs nothing and does not slow you down when worn."
+      }
+    ],
+    "requires": [
+      "light_armor.custom_fit"
+    ]
+  },
+  {
+    "id": "light_armor.matching_set",
+    "skill": "light_armor",
+    "name": "Matching Set",
+    "ranks": [
+      {
+        "skillReq": 70,
+        "desc": "Additional 25% armor bonus if wearing a matched set of Light Armor."
+      }
+    ],
+    "requires": [
+      "light_armor.custom_fit"
+    ]
+  },
+  {
+    "id": "light_armor.wind_walker",
+    "skill": "light_armor",
+    "name": "Wind Walker",
+    "ranks": [
+      {
+        "skillReq": 60,
+        "desc": "Stamina regenerates 50% faster in all Light Armor: head, chest, hands, feet."
+      }
+    ],
+    "requires": [
+      "light_armor.unhindered"
+    ]
+  },
+  {
+    "id": "light_armor.deft_movement",
+    "skill": "light_armor",
+    "name": "Deft Movement",
+    "ranks": [
+      {
+        "skillReq": 100,
+        "desc": "10% chance of avoiding all damage from a melee attack while wearing all Light Armor."
+      }
+    ],
+    "requires": [
+      "light_armor.wind_walker",
+      "light_armor.matching_set"
+    ]
+  },
+  {
+    "id": "lockpicking.novice_locks",
+    "skill": "lockpicking",
+    "name": "Novice Locks",
+    "ranks": [
+      {
+        "skillReq": 0,
+        "desc": "Novice locks are much easier to pick."
+      }
+    ],
+    "requires": []
+  },
+  {
+    "id": "lockpicking.apprentice_locks",
+    "skill": "lockpicking",
+    "name": "Apprentice Locks",
+    "ranks": [
+      {
+        "skillReq": 25,
+        "desc": "Apprentice locks are much easier to pick."
+      }
+    ],
+    "requires": [
+      "lockpicking.novice_locks"
+    ]
+  },
+  {
+    "id": "lockpicking.adept_locks",
+    "skill": "lockpicking",
+    "name": "Adept Locks",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Adept locks are much easier to pick."
+      }
+    ],
+    "requires": [
+      "lockpicking.apprentice_locks"
+    ]
+  },
+  {
+    "id": "lockpicking.expert_locks",
+    "skill": "lockpicking",
+    "name": "Expert Locks",
+    "ranks": [
+      {
+        "skillReq": 75,
+        "desc": "Expert locks are much easier to pick."
+      }
+    ],
+    "requires": [
+      "lockpicking.adept_locks"
+    ]
+  },
+  {
+    "id": "lockpicking.master_locks",
+    "skill": "lockpicking",
+    "name": "Master Locks",
+    "ranks": [
+      {
+        "skillReq": 100,
+        "desc": "Master locks are much easier to pick."
+      }
+    ],
+    "requires": [
+      "lockpicking.expert_locks"
+    ]
+  },
+  {
+    "id": "lockpicking.quick_hands",
+    "skill": "lockpicking",
+    "name": "Quick Hands",
+    "ranks": [
+      {
+        "skillReq": 40,
+        "desc": "Able to pick locks without being noticed."
+      }
+    ],
+    "requires": [
+      "lockpicking.apprentice_locks"
+    ]
+  },
+  {
+    "id": "lockpicking.wax_key",
+    "skill": "lockpicking",
+    "name": "Wax Key",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Automatically gives you a copy of a picked lock's key if it has one."
+      }
+    ],
+    "requires": [
+      "lockpicking.quick_hands"
+    ]
+  },
+  {
+    "id": "lockpicking.golden_touch",
+    "skill": "lockpicking",
+    "name": "Golden Touch",
+    "ranks": [
+      {
+        "skillReq": 60,
+        "desc": "Find more gold in chests."
+      }
+    ],
+    "requires": [
+      "lockpicking.adept_locks"
+    ]
+  },
+  {
+    "id": "lockpicking.treasure_hunter",
+    "skill": "lockpicking",
+    "name": "Treasure Hunter",
+    "ranks": [
+      {
+        "skillReq": 70,
+        "desc": "50% greater chance of finding special treasure."
+      }
+    ],
+    "requires": [
+      "lockpicking.golden_touch"
+    ]
+  },
+  {
+    "id": "lockpicking.locksmith",
+    "skill": "lockpicking",
+    "name": "Locksmith",
+    "ranks": [
+      {
+        "skillReq": 80,
+        "desc": "Pick starts close to the lock opening position."
+      }
+    ],
+    "requires": [
+      "lockpicking.expert_locks"
+    ]
+  },
+  {
+    "id": "lockpicking.unbreakable",
+    "skill": "lockpicking",
+    "name": "Unbreakable",
+    "ranks": [
+      {
+        "skillReq": 100,
+        "desc": "Lockpicks never break."
+      }
+    ],
+    "requires": [
+      "lockpicking.locksmith"
+    ]
+  },
+  {
+    "id": "pickpocket.light_fingers",
+    "skill": "pickpocket",
+    "name": "Light Fingers",
+    "ranks": [
+      {
+        "skillReq": 0,
+        "desc": "Pickpocketing bonus of 20%. Item weight and value reduce pickpocketing odds."
+      },
+      {
+        "skillReq": 20,
+        "desc": "Pickpocketing bonus of 40%. Item weight and value reduce pickpocketing odds."
+      },
+      {
+        "skillReq": 40,
+        "desc": "Pickpocketing bonus of 60%. Item weight and value reduce pickpocketing odds."
+      },
+      {
+        "skillReq": 60,
+        "desc": "Pickpocketing bonus of 80%. Item weight and value reduce pickpocketing odds."
+      },
+      {
+        "skillReq": 80,
+        "desc": "Pickpocketing bonus of 100%. Item weight and value reduce pickpocketing odds."
+      }
+    ],
+    "requires": []
+  },
+  {
+    "id": "pickpocket.night_thief",
+    "skill": "pickpocket",
+    "name": "Night Thief",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "+25% chance to pickpocket if the target is asleep."
+      }
+    ],
+    "requires": [
+      "pickpocket.light_fingers"
+    ]
+  },
+  {
+    "id": "pickpocket.cutpurse",
+    "skill": "pickpocket",
+    "name": "Cutpurse",
+    "ranks": [
+      {
+        "skillReq": 40,
+        "desc": "Pickpocketing gold is 50% easier."
+      }
+    ],
+    "requires": [
+      "pickpocket.night_thief"
+    ]
+  },
+  {
+    "id": "pickpocket.poisoned",
+    "skill": "pickpocket",
+    "name": "Poisoned",
+    "ranks": [
+      {
+        "skillReq": 40,
+        "desc": "Silently harm enemies by placing poisons in their pockets."
+      }
+    ],
+    "requires": [
+      "pickpocket.night_thief"
+    ]
+  },
+  {
+    "id": "pickpocket.extra_pockets",
+    "skill": "pickpocket",
+    "name": "Extra Pockets",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Carrying capacity is increased by 100."
+      }
+    ],
+    "requires": [
+      "pickpocket.night_thief"
+    ]
+  },
+  {
+    "id": "pickpocket.keymaster",
+    "skill": "pickpocket",
+    "name": "Keymaster",
+    "ranks": [
+      {
+        "skillReq": 60,
+        "desc": "Pickpocketing keys almost always works."
+      }
+    ],
+    "requires": [
+      "pickpocket.cutpurse"
+    ]
+  },
+  {
+    "id": "pickpocket.misdirection",
+    "skill": "pickpocket",
+    "name": "Misdirection",
+    "ranks": [
+      {
+        "skillReq": 70,
+        "desc": "Can pickpocket equipped weapons."
+      }
+    ],
+    "requires": [
+      "pickpocket.cutpurse"
+    ]
+  },
+  {
+    "id": "pickpocket.perfect_touch",
+    "skill": "pickpocket",
+    "name": "Perfect Touch",
+    "ranks": [
+      {
+        "skillReq": 100,
+        "desc": "Can pickpocket equipped items."
+      }
+    ],
+    "requires": [
+      "pickpocket.misdirection"
+    ]
+  },
+  {
+    "id": "sneak.stealth",
+    "skill": "sneak",
+    "name": "Stealth",
+    "ranks": [
+      {
+        "skillReq": 0,
+        "desc": "You are 20% harder to detect when sneaking."
+      },
+      {
+        "skillReq": 20,
+        "desc": "You are 25% harder to detect when sneaking."
+      },
+      {
+        "skillReq": 40,
+        "desc": "You are 30% harder to detect when sneaking."
+      },
+      {
+        "skillReq": 60,
+        "desc": "You are 35% harder to detect when sneaking."
+      },
+      {
+        "skillReq": 80,
+        "desc": "You are 40% harder to detect when sneaking."
+      }
+    ],
+    "requires": []
+  },
+  {
+    "id": "sneak.backstab",
+    "skill": "sneak",
+    "name": "Backstab",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Sneak attacks with one-handed weapons now do six times damage."
+      }
+    ],
+    "requires": [
+      "sneak.stealth"
+    ]
+  },
+  {
+    "id": "sneak.muffled_movement",
+    "skill": "sneak",
+    "name": "Muffled Movement",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Noise from armor is reduced by 50%."
+      }
+    ],
+    "requires": [
+      "sneak.stealth"
+    ]
+  },
+  {
+    "id": "sneak.deadly_aim",
+    "skill": "sneak",
+    "name": "Deadly Aim",
+    "ranks": [
+      {
+        "skillReq": 40,
+        "desc": "Sneak attacks with bows now do three times damage."
+      }
+    ],
+    "requires": [
+      "sneak.backstab"
+    ]
+  },
+  {
+    "id": "sneak.light_foot",
+    "skill": "sneak",
+    "name": "Light Foot",
+    "ranks": [
+      {
+        "skillReq": 40,
+        "desc": "You won't trigger pressure plates."
+      }
+    ],
+    "requires": [
+      "sneak.muffled_movement"
+    ]
+  },
+  {
+    "id": "sneak.assassins_blade",
+    "skill": "sneak",
+    "name": "Assassin's Blade",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Sneak attacks with daggers now do a total of fifteen times normal damage."
+      }
+    ],
+    "requires": [
+      "sneak.deadly_aim"
+    ]
+  },
+  {
+    "id": "sneak.silent_roll",
+    "skill": "sneak",
+    "name": "Silent Roll",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Sprinting while sneaking executes a silent forward roll."
+      }
+    ],
+    "requires": [
+      "sneak.light_foot"
+    ]
+  },
+  {
+    "id": "sneak.silence",
+    "skill": "sneak",
+    "name": "Silence",
+    "ranks": [
+      {
+        "skillReq": 70,
+        "desc": "Walking and running does not affect detection."
+      }
+    ],
+    "requires": [
+      "sneak.silent_roll"
+    ]
+  },
+  {
+    "id": "sneak.shadow_warrior",
+    "skill": "sneak",
+    "name": "Shadow Warrior",
+    "ranks": [
+      {
+        "skillReq": 100,
+        "desc": "Crouching stops combat for a moment and forces distant opponents to search for a target."
+      }
+    ],
+    "requires": [
+      "sneak.silence"
+    ]
+  },
+  {
+    "id": "speech.haggling",
+    "skill": "speech",
+    "name": "Haggling",
+    "ranks": [
+      {
+        "skillReq": 0,
+        "desc": "Buying and selling prices are 10% better."
+      },
+      {
+        "skillReq": 20,
+        "desc": "Buying and selling prices are 15% better."
+      },
+      {
+        "skillReq": 40,
+        "desc": "Buying and selling prices are 20% better."
+      },
+      {
+        "skillReq": 60,
+        "desc": "Buying and selling prices are 25% better."
+      },
+      {
+        "skillReq": 80,
+        "desc": "Buying and selling prices are 30% better."
+      }
+    ],
+    "requires": []
+  },
+  {
+    "id": "speech.allure",
+    "skill": "speech",
+    "name": "Allure",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "10% better prices with the opposite sex."
+      }
+    ],
+    "requires": [
+      "speech.haggling"
+    ]
+  },
+  {
+    "id": "speech.bribery",
+    "skill": "speech",
+    "name": "Bribery",
+    "ranks": [
+      {
+        "skillReq": 30,
+        "desc": "Can bribe guards to ignore crimes."
+      }
+    ],
+    "requires": [
+      "speech.haggling"
+    ]
+  },
+  {
+    "id": "speech.merchant",
+    "skill": "speech",
+    "name": "Merchant",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Can sell any type of item to any kind of merchant."
+      }
+    ],
+    "requires": [
+      "speech.allure"
+    ]
+  },
+  {
+    "id": "speech.persuasion",
+    "skill": "speech",
+    "name": "Persuasion",
+    "ranks": [
+      {
+        "skillReq": 50,
+        "desc": "Persuasion attempts are 30% easier."
+      }
+    ],
+    "requires": [
+      "speech.bribery"
+    ]
+  },
+  {
+    "id": "speech.investor",
+    "skill": "speech",
+    "name": "Investor",
+    "ranks": [
+      {
+        "skillReq": 70,
+        "desc": "Can invest 500 gold with a shopkeeper to increase his available gold permanently."
+      }
+    ],
+    "requires": [
+      "speech.merchant"
+    ]
+  },
+  {
+    "id": "speech.intimidation",
+    "skill": "speech",
+    "name": "Intimidation",
+    "ranks": [
+      {
+        "skillReq": 70,
+        "desc": "Intimidation is twice as likely to be successful."
+      }
+    ],
+    "requires": [
+      "speech.persuasion"
+    ]
+  },
+  {
+    "id": "speech.fence",
+    "skill": "speech",
+    "name": "Fence",
+    "ranks": [
+      {
+        "skillReq": 90,
+        "desc": "Can barter stolen goods with any merchant you have invested in."
+      }
+    ],
+    "requires": [
+      "speech.investor"
+    ]
+  },
+  {
+    "id": "speech.master_trader",
+    "skill": "speech",
+    "name": "Master Trader",
+    "ranks": [
+      {
+        "skillReq": 100,
+        "desc": "Every merchant in the world gains 1000 gold for bartering."
+      }
+    ],
+    "requires": [
+      "speech.fence"
+    ]
+  }
+]
