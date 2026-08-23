@@ -1,0 +1,162 @@
+[
+  {
+    "id": "altmer",
+    "name": "High Elf",
+    "skills": {
+      "illusion": 10,
+      "alteration": 5,
+      "conjuration": 5,
+      "destruction": 5,
+      "enchanting": 5,
+      "restoration": 5
+    },
+    "power": "Highborn: regenerate magicka rapidly for 60s",
+    "passives": [
+      "+50 Magicka"
+    ]
+  },
+  {
+    "id": "argonian",
+    "name": "Argonian",
+    "skills": {
+      "lockpicking": 10,
+      "alteration": 5,
+      "light_armor": 5,
+      "pickpocket": 5,
+      "restoration": 5,
+      "sneak": 5
+    },
+    "power": "Histskin: regenerate health 10x faster for 60s",
+    "passives": [
+      "Water breathing",
+      "50% disease resistance"
+    ]
+  },
+  {
+    "id": "bosmer",
+    "name": "Wood Elf",
+    "skills": {
+      "archery": 10,
+      "alchemy": 5,
+      "light_armor": 5,
+      "lockpicking": 5,
+      "pickpocket": 5,
+      "sneak": 5
+    },
+    "power": "Command Animal: make an animal an ally for 60s",
+    "passives": [
+      "50% poison resistance",
+      "50% disease resistance"
+    ]
+  },
+  {
+    "id": "breton",
+    "name": "Breton",
+    "skills": {
+      "conjuration": 10,
+      "alchemy": 5,
+      "alteration": 5,
+      "illusion": 5,
+      "restoration": 5,
+      "speech": 5
+    },
+    "power": "Dragonskin: absorb 50% of spell magicka for 60s",
+    "passives": [
+      "25% magic resistance"
+    ]
+  },
+  {
+    "id": "dunmer",
+    "name": "Dark Elf",
+    "skills": {
+      "destruction": 10,
+      "alchemy": 5,
+      "alteration": 5,
+      "illusion": 5,
+      "light_armor": 5,
+      "sneak": 5
+    },
+    "power": "Ancestor's Wrath: fire cloak for 60s",
+    "passives": [
+      "50% fire resistance"
+    ]
+  },
+  {
+    "id": "imperial",
+    "name": "Imperial",
+    "skills": {
+      "restoration": 10,
+      "block": 5,
+      "destruction": 5,
+      "enchanting": 5,
+      "heavy_armor": 5,
+      "one_handed": 5
+    },
+    "power": "Voice of the Emperor: calm nearby people for 60s",
+    "passives": [
+      "Imperial Luck: extra gold in containers"
+    ]
+  },
+  {
+    "id": "khajiit",
+    "name": "Khajiit",
+    "skills": {
+      "sneak": 10,
+      "alchemy": 5,
+      "archery": 5,
+      "lockpicking": 5,
+      "one_handed": 5,
+      "pickpocket": 5
+    },
+    "power": "Night Eye: see in the dark for 60s",
+    "passives": [
+      "Claws: unarmed attacks do 15 extra damage"
+    ]
+  },
+  {
+    "id": "nord",
+    "name": "Nord",
+    "skills": {
+      "two_handed": 10,
+      "block": 5,
+      "light_armor": 5,
+      "one_handed": 5,
+      "smithing": 5,
+      "speech": 5
+    },
+    "power": "Battle Cry: nearby enemies flee for 30s",
+    "passives": [
+      "50% frost resistance"
+    ]
+  },
+  {
+    "id": "orc",
+    "name": "Orc",
+    "skills": {
+      "heavy_armor": 10,
+      "block": 5,
+      "enchanting": 5,
+      "one_handed": 5,
+      "smithing": 5,
+      "two_handed": 5
+    },
+    "power": "Berserker Rage: take half damage and deal double damage for 60s",
+    "passives": []
+  },
+  {
+    "id": "redguard",
+    "name": "Redguard",
+    "skills": {
+      "one_handed": 10,
+      "alteration": 5,
+      "archery": 5,
+      "block": 5,
+      "destruction": 5,
+      "smithing": 5
+    },
+    "power": "Adrenaline Rush: stamina regenerates 10x faster for 60s",
+    "passives": [
+      "50% poison resistance"
+    ]
+  }
+]

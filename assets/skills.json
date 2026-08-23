@@ -1,0 +1,92 @@
+[
+  {
+    "id": "archery",
+    "name": "Archery",
+    "category": "combat"
+  },
+  {
+    "id": "block",
+    "name": "Block",
+    "category": "combat"
+  },
+  {
+    "id": "heavy_armor",
+    "name": "Heavy Armor",
+    "category": "combat"
+  },
+  {
+    "id": "one_handed",
+    "name": "One-Handed",
+    "category": "combat"
+  },
+  {
+    "id": "smithing",
+    "name": "Smithing",
+    "category": "combat"
+  },
+  {
+    "id": "two_handed",
+    "name": "Two-Handed",
+    "category": "combat"
+  },
+  {
+    "id": "alteration",
+    "name": "Alteration",
+    "category": "magic"
+  },
+  {
+    "id": "conjuration",
+    "name": "Conjuration",
+    "category": "magic"
+  },
+  {
+    "id": "destruction",
+    "name": "Destruction",
+    "category": "magic"
+  },
+  {
+    "id": "enchanting",
+    "name": "Enchanting",
+    "category": "magic"
+  },
+  {
+    "id": "illusion",
+    "name": "Illusion",
+    "category": "magic"
+  },
+  {
+    "id": "restoration",
+    "name": "Restoration",
+    "category": "magic"
+  },
+  {
+    "id": "alchemy",
+    "name": "Alchemy",
+    "category": "stealth"
+  },
+  {
+    "id": "light_armor",
+    "name": "Light Armor",
+    "category": "stealth"
+  },
+  {
+    "id": "lockpicking",
+    "name": "Lockpicking",
+    "category": "stealth"
+  },
+  {
+    "id": "pickpocket",
+    "name": "Pickpocket",
+    "category": "stealth"
+  },
+  {
+    "id": "sneak",
+    "name": "Sneak",
+    "category": "stealth"
+  },
+  {
+    "id": "speech",
+    "name": "Speech",
+    "category": "stealth"
+  }
+]

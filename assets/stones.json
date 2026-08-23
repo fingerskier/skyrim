@@ -1,0 +1,67 @@
+[
+  {
+    "id": "warrior",
+    "name": "The Warrior Stone",
+    "effect": "Combat skills increase 20% faster."
+  },
+  {
+    "id": "mage",
+    "name": "The Mage Stone",
+    "effect": "Magic skills increase 20% faster."
+  },
+  {
+    "id": "thief",
+    "name": "The Thief Stone",
+    "effect": "Stealth skills increase 20% faster."
+  },
+  {
+    "id": "lover",
+    "name": "The Lover Stone",
+    "effect": "All skills increase 15% faster."
+  },
+  {
+    "id": "lord",
+    "name": "The Lord Stone",
+    "effect": "+50 armor rating and +25% magic resistance."
+  },
+  {
+    "id": "lady",
+    "name": "The Lady Stone",
+    "effect": "Health and stamina regenerate 25% faster."
+  },
+  {
+    "id": "steed",
+    "name": "The Steed Stone",
+    "effect": "+100 carry weight; equipped armor weighs nothing and does not slow you."
+  },
+  {
+    "id": "apprentice",
+    "name": "The Apprentice Stone",
+    "effect": "Magicka regenerates 100% faster, but 100% weakness to magic."
+  },
+  {
+    "id": "atronach",
+    "name": "The Atronach Stone",
+    "effect": "+50 magicka and absorb 50% of spell magicka, but magicka regenerates 50% slower."
+  },
+  {
+    "id": "ritual",
+    "name": "The Ritual Stone",
+    "effect": "Power: reanimate nearby dead to fight for you for 200s (once per day)."
+  },
+  {
+    "id": "serpent",
+    "name": "The Serpent Stone",
+    "effect": "Power: ranged paralysis for 5s plus 25 poison damage per second (once per day)."
+  },
+  {
+    "id": "shadow",
+    "name": "The Shadow Stone",
+    "effect": "Power: invisibility for 60s (once per day)."
+  },
+  {
+    "id": "tower",
+    "name": "The Tower Stone",
+    "effect": "Power: unlock one Expert-level or lower lock (once per day)."
+  }
+]
