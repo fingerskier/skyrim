@@ -9,6 +9,8 @@ export default function Landing() {
         <StateLink to="alchemy">Alchemy Calculator</StateLink>
         {' | '}
         <StateLink to="smithing">Smithing Calculator</StateLink>
+        {' | '}
+        <StateLink to="planner">Character Planner</StateLink>
       </nav>
     </div>
   )

@@ -1,0 +1,21 @@
+.page { padding: 0 1rem; max-width: 1400px; margin: 0 auto; text-align: left; }
+.header { display: flex; justify-content: space-between; align-items: baseline; }
+.toolbar { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: .5rem; }
+.toolbar input { min-width: 10rem; }
+.summary { display: flex; flex-wrap: wrap; gap: 1rem; padding: .5rem .75rem; border: 1px solid #555; border-radius: 6px; margin-bottom: 1rem; font-size: .95rem; }
+.bad { color: #f66; font-weight: 600; }
+.columns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+@media (max-width: 1000px) { .columns { grid-template-columns: 1fr; } }
+.column { display: flex; flex-direction: column; gap: 1rem; }
+.panel { border: 1px solid #444; border-radius: 6px; padding: .5rem .75rem; }
+.panelHead { display: grid; grid-template-columns: 1fr 4.5rem; gap: .25rem .5rem; align-items: center; }
+.panelHead h3 { margin: 0; font-size: 1.05rem; }
+.panelHead input[type=range] { grid-column: 1 / -1; width: 100%; }
+.perkList { list-style: none; margin: .5rem 0 0; padding: 0; }
+.perk { display: flex; justify-content: space-between; align-items: center; padding: .15rem 0; border-top: 1px solid #333; gap: .5rem; }
+.perkName { flex: 1; }
+.perkCtl { display: flex; align-items: center; gap: .25rem; }
+.perkCtl button { padding: 0 .5rem; line-height: 1.4; }
+.reason { opacity: .6; font-size: .75rem; white-space: nowrap; }
+.locked { opacity: .55; }
+.taken .perkName { color: #9fd; }

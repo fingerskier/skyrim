@@ -2,6 +2,7 @@ import { StateMachine, State } from 'ygdrassil'
 import Landing from './pages/Landing.jsx'
 import AlchemyCalculator from './pages/AlchemyCalculator.jsx'
 import SmithingCalculator from './pages/SmithingCalculator.jsx'
+import CharacterPlanner from './pages/CharacterPlanner.jsx'
 import './App.css'
 
 export default function App() {
@@ -15,6 +16,9 @@ export default function App() {
       </State>
       <State name="smithing">
         <SmithingCalculator />
+      </State>
+      <State name="planner">
+        <CharacterPlanner />
       </State>
     </StateMachine>
   )
