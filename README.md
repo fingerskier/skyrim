@@ -59,3 +59,12 @@ function potionValue(ingredients[], player, effectsRef, overrides):
 
 You can select all ingredients that have on-hand, and the number of each of those.
 You can also input player stats: alchemy skill, fortify alchemy %, alchemist perk level, physician perk level, benefactor perk level, poisoner perk level, seeker of shadows.
+
+## Character Planner
+
+Pick race + standing stone, set target skill levels, allocate perks across all 18 vanilla trees.
+Computes character level from skill gains (skill-up to level *s* grants *s* XP; level L→L+1 needs `75 + 25·L` XP), perk points (= level − 1), and flags invalid perks (missing prereq / skill too low / over budget).
+Builds save to `localStorage` (`skyrim.builds`) and share via the `build=` hash param (`#?yg-pages=planner&build=v1.…`).
+
+Data: `assets/skills.json`, `assets/perks.json`, `assets/races.json`, `assets/stones.json`.
+Tests: `npm test` (vitest).
