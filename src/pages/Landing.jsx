@@ -11,6 +11,8 @@ export default function Landing() {
         <StateLink to="smithing">Smithing Calculator</StateLink>
         {' | '}
         <StateLink to="planner">Character Planner</StateLink>
+        {' | '}
+        <StateLink to="items">Item Codes</StateLink>
       </nav>
     </div>
   )
